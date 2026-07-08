@@ -1,5 +1,11 @@
 # Business Landing CMS — Changelog
 
+## 1.6.3 — 2026-07-08
+
+**Deploy:** Hostinger → https://bilohash.com/lending/
+
+- **Hotfix:** `lang/sv.php` — removed extra `],` causing HTTP 500 on Swedish locale
+
 ## 1.6.2 — 2026-07-08
 
 **Deploy:** Hostinger → https://bilohash.com/lending/

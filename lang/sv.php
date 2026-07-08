@@ -757,5 +757,4 @@ return [
         'notify_seo_done' => 'SEO-analys slutförd.',
         'notify_ai_done' => 'AI-uppgift slutförd.',
     ],
-    ],
 ];
