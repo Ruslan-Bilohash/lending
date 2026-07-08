@@ -2,10 +2,10 @@
 
 Universal **PHP landing page builder** for any local business — dentist, driving school, beauty salon, law firm, hotel and 18 industry presets. Multilingual frontend and admin (7 languages), AI auto-fill, SEO checklists, service pages, sitemap, leads and Faktura invoices. Portfolio project by [Ruslan Bilohash](https://bilohash.com/) · **BILOHASH ecosystem**.
 
-**Version:** 1.6.0 · **Readme:** [EN](README.md) · [NO](README-no.md) · [SV](README-sv.md) · [PL](README-pl.md) · [LT](README-lt.md) · [UA](README-uk.md) · [RU](README-ru.md)
+**Version:** 1.6.6 · **Readme:** [EN](README.md) · [NO](README-no.md) · [SV](README-sv.md) · [PL](README-pl.md) · [LT](README-lt.md) · [UA](README-uk.md) · [RU](README-ru.md)
 
 ![PHP](https://img.shields.io/badge/PHP-8%2B-777BB4?logo=php&logoColor=white)
-![Version](https://img.shields.io/badge/version-1.6.0-blue)
+![Version](https://img.shields.io/badge/version-1.6.6-blue)
 ![License](https://img.shields.io/badge/license-Proprietary-red)
 ![i18n](https://img.shields.io/badge/languages-7-green)
 ![Demo](https://img.shields.io/badge/demo-30%20days-orange)
@@ -104,7 +104,7 @@ lending/
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md) — latest **v1.6.0** (docs, GitHub release).
+See [CHANGELOG.md](CHANGELOG.md) — latest **v1.6.6** (template demos, country SEO, cross-links).
 
 ---
 

@@ -2,10 +2,10 @@
 
 Universell **PHP-landningssidebyggare** för alla lokala företag — tandläkare, trafikskola, skönhetssalong, advokatbyrå, hotell och 18 branschförinställningar. Flerspråkig frontend och admin (7 språk), AI auto-ifyllning, SEO-checklistor, tjänstesidor, sitemap, leads och Faktura-fakturor. Portföljprojekt av [Ruslan Bilohash](https://bilohash.com/) · **BILOHASH-ekosystemet**.
 
-**Version:** 1.6.0 · **Readme:** [EN](README.md) · [NO](README-no.md) · [SV](README-sv.md) · [PL](README-pl.md) · [LT](README-lt.md) · [UA](README-uk.md) · [RU](README-ru.md)
+**Version:** 1.6.6 · **Readme:** [EN](README.md) · [NO](README-no.md) · [SV](README-sv.md) · [PL](README-pl.md) · [LT](README-lt.md) · [UA](README-uk.md) · [RU](README-ru.md)
 
 ![PHP](https://img.shields.io/badge/PHP-8%2B-777BB4?logo=php&logoColor=white)
-![Version](https://img.shields.io/badge/version-1.6.0-blue)
+![Version](https://img.shields.io/badge/version-1.6.6-blue)
 ![License](https://img.shields.io/badge/license-Proprietary-red)
 ![i18n](https://img.shields.io/badge/languages-7-green)
 ![Demo](https://img.shields.io/badge/demo-30%20days-orange)
@@ -104,7 +104,7 @@ lending/
 
 ## Ändringslogg
 
-Se [CHANGELOG.md](CHANGELOG.md) — senaste **v1.6.0** (dokumentation, GitHub-release).
+Se [CHANGELOG.md](CHANGELOG.md) — senaste **v1.6.6** (malldemoer, land-SEO, korslänkar).
 
 ---
 

@@ -2,10 +2,10 @@
 
 Universali **PHP nukreipimo puslapių kūrimo priemonė** bet kuriam vietiniam verslui — odontologas, vairavimo mokykla, grožio salonas, advokatų kontora, viešbutis ir 18 pramonės šablonų. Daugiakalbis frontend ir admin (7 kalbos), AI automatinis užpildymas, SEO kontroliniai sąrašai, paslaugų puslapiai, svetainės žemėlapis, užklausos ir Faktura sąskaitos. Portfolio projektas [Ruslano Bilohasho](https://bilohash.com/) · **BILOHASH ekosistema**.
 
-**Versija:** 1.6.0 · **Readme:** [EN](README.md) · [NO](README-no.md) · [SV](README-sv.md) · [PL](README-pl.md) · [LT](README-lt.md) · [UA](README-uk.md) · [RU](README-ru.md)
+**Versija:** 1.6.6 · **Readme:** [EN](README.md) · [NO](README-no.md) · [SV](README-sv.md) · [PL](README-pl.md) · [LT](README-lt.md) · [UA](README-uk.md) · [RU](README-ru.md)
 
 ![PHP](https://img.shields.io/badge/PHP-8%2B-777BB4?logo=php&logoColor=white)
-![Version](https://img.shields.io/badge/version-1.6.0-blue)
+![Version](https://img.shields.io/badge/version-1.6.6-blue)
 ![License](https://img.shields.io/badge/license-Proprietary-red)
 ![i18n](https://img.shields.io/badge/languages-7-green)
 ![Demo](https://img.shields.io/badge/demo-30%20days-orange)
@@ -104,7 +104,7 @@ lending/
 
 ## Pakeitimų žurnalas
 
-Žiūrėkite [CHANGELOG.md](CHANGELOG.md) — naujausia **v1.6.0** (dokumentacija, GitHub leidimas).
+Žiūrėkite [CHANGELOG.md](CHANGELOG.md) — naujausia **v1.6.6** (šablonų demo, šalies SEO, kryžminės nuorodos).
 
 ---
 

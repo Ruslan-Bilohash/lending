@@ -2,7 +2,7 @@
 
 ## 1.6.6 — 2026-07-08
 
-**Deploy:** Hostinger → https://bilohash.com/lending/
+**Deploy:** Hostinger → https://bilohash.com/lending/ · **GitHub:** https://github.com/Ruslan-Bilohash/lending/releases/tag/v1.6.6
 
 - **Template demos:** each of 10 designs shows the matching business niche per country/language (taxi #9 → «Такси Москва» for RU, «Oslo Taxi» for NO, «Vilniaus Taksi» for LT)
 - **SEO:** country-specific titles, descriptions, keywords per preset × lang; Schema.org `TaxiService`, `Restaurant`, etc.

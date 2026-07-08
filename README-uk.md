@@ -2,10 +2,10 @@
 
 Універсальний **конструктор лендінгів на PHP** для будь-якого локального бізнесу — стоматолог, автошкола, салон краси, юридична фірма, готель і 18 галузевих пресетів. Багатомовний фронтенд і адмін (7 мов), AI автозаповнення, SEO-чеклісти, сторінки послуг, sitemap, ліди та рахунки Faktura. Портфоліо-проєкт [Руслана Білогаша](https://bilohash.com/) · **екосистема BILOHASH**.
 
-**Версія:** 1.6.0 · **Readme:** [EN](README.md) · [NO](README-no.md) · [SV](README-sv.md) · [PL](README-pl.md) · [LT](README-lt.md) · [UA](README-uk.md) · [RU](README-ru.md)
+**Версія:** 1.6.6 · **Readme:** [EN](README.md) · [NO](README-no.md) · [SV](README-sv.md) · [PL](README-pl.md) · [LT](README-lt.md) · [UA](README-uk.md) · [RU](README-ru.md)
 
 ![PHP](https://img.shields.io/badge/PHP-8%2B-777BB4?logo=php&logoColor=white)
-![Version](https://img.shields.io/badge/version-1.6.0-blue)
+![Version](https://img.shields.io/badge/version-1.6.6-blue)
 ![License](https://img.shields.io/badge/license-Proprietary-red)
 ![i18n](https://img.shields.io/badge/languages-7-green)
 ![Demo](https://img.shields.io/badge/demo-30%20days-orange)
@@ -104,7 +104,7 @@ lending/
 
 ## Журнал змін
 
-Див. [CHANGELOG.md](CHANGELOG.md) — остання **v1.6.0** (документація, реліз GitHub).
+Див. [CHANGELOG.md](CHANGELOG.md) — остання **v1.6.6** (демо шаблонів, SEO країни, перехресні посилання).
 
 ---
 

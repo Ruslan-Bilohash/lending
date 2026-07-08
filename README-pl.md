@@ -2,10 +2,10 @@
 
 Uniwersalny **kreator stron docelowych w PHP** dla każdej lokalnej firmy — dentysta, szkoła jazdy, salon urody, kancelaria prawna, hotel i 18 branżowych presetów. Wielojęzyczny frontend i panel admin (7 języków), auto-uzupełnianie AI, listy kontrolne SEO, strony usług, mapa witryny, leady i faktury Faktura. Projekt portfolio [Ruslana Bilohasha](https://bilohash.com/) · **ekosystem BILOHASH**.
 
-**Wersja:** 1.6.0 · **Readme:** [EN](README.md) · [NO](README-no.md) · [SV](README-sv.md) · [PL](README-pl.md) · [LT](README-lt.md) · [UA](README-uk.md) · [RU](README-ru.md)
+**Wersja:** 1.6.6 · **Readme:** [EN](README.md) · [NO](README-no.md) · [SV](README-sv.md) · [PL](README-pl.md) · [LT](README-lt.md) · [UA](README-uk.md) · [RU](README-ru.md)
 
 ![PHP](https://img.shields.io/badge/PHP-8%2B-777BB4?logo=php&logoColor=white)
-![Version](https://img.shields.io/badge/version-1.6.0-blue)
+![Version](https://img.shields.io/badge/version-1.6.6-blue)
 ![License](https://img.shields.io/badge/license-Proprietary-red)
 ![i18n](https://img.shields.io/badge/languages-7-green)
 ![Demo](https://img.shields.io/badge/demo-30%20days-orange)
@@ -104,7 +104,7 @@ lending/
 
 ## Dziennik zmian
 
-Zobacz [CHANGELOG.md](CHANGELOG.md) — najnowsza **v1.6.0** (dokumentacja, wydanie GitHub).
+Zobacz [CHANGELOG.md](CHANGELOG.md) — najnowsza **v1.6.6** (demo szablonów, SEO kraju, linki krzyżowe).
 
 ---
 
