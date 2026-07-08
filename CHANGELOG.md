@@ -1,5 +1,11 @@
 # Business Landing CMS — Changelog
 
+## 1.6.7 — 2026-07-08
+
+**Deploy:** Hostinger → https://bilohash.com/lending/
+
+- **Hotfix mobile:** burger menu on landing/hub — backdrop no longer covers the nav panel (z-index stacking fix)
+
 ## 1.6.6 — 2026-07-08
 
 **Deploy:** Hostinger → https://bilohash.com/lending/ · **GitHub:** https://github.com/Ruslan-Bilohash/lending/releases/tag/v1.6.6

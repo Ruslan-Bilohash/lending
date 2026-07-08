@@ -58,6 +58,7 @@ img { max-width: 100%; height: auto; }
     display: flex; align-items: center; justify-content: space-between; gap: .5rem;
     padding: .65rem max(1rem, env(safe-area-inset-left)) .65rem max(1rem, env(safe-area-inset-right));
     max-width: var(--ld-max); margin: 0 auto;
+    position: relative; z-index: 102;
 }
 .ld-top-actions { display: flex; align-items: center; gap: .35rem; flex-shrink: 0; }
 .ld-brand { display: flex; align-items: center; gap: .5rem; font-weight: 800; color: var(--ld-text); min-width: 0; flex: 1 1 auto; }
@@ -369,6 +370,7 @@ img { max-width: 100%; height: auto; }
 .ld-landing-header-inner {
     max-width: var(--ld-max); margin: 0 auto; padding: .65rem 1rem;
     display: flex; align-items: center; gap: .75rem; flex-wrap: nowrap;
+    position: relative; z-index: 102;
 }
 .ld-landing-logo {
     display: flex; align-items: center; gap: .5rem; font-weight: 800; color: var(--ld-text);
@@ -390,7 +392,7 @@ img { max-width: 100%; height: auto; }
 .ld-menu-btn {
     display: none; width: 2.5rem; height: 2.5rem; align-items: center; justify-content: center;
     border: 1px solid var(--ld-border); border-radius: 8px; background: #fff; cursor: pointer;
-    color: var(--ld-text); flex-shrink: 0;
+    color: var(--ld-text); flex-shrink: 0; touch-action: manipulation; -webkit-tap-highlight-color: transparent;
 }
 .ld-menu-btn[aria-expanded="true"] { background: var(--ld-primary-light, #eff6ff); border-color: var(--ld-primary); color: var(--ld-primary); }
 .ld-mobile-nav {
@@ -399,6 +401,7 @@ img { max-width: 100%; height: auto; }
     max-height: min(72vh, calc(100dvh - 3.5rem));
     overflow-y: auto; -webkit-overflow-scrolling: touch;
     box-shadow: 0 14px 36px rgba(15, 23, 42, .12);
+    position: relative; z-index: 101;
 }
 .ld-mobile-nav[hidden] { display: none !important; }
 .ld-mobile-nav-head {
@@ -427,7 +430,7 @@ img { max-width: 100%; height: auto; }
 .ld-mobile-lang a.is-active { color: var(--ld-primary); }
 .ld-mobile-backdrop {
     position: fixed; inset: 0; background: rgba(15, 23, 42, .42);
-    z-index: 90; opacity: 0; pointer-events: none; transition: opacity .22s ease;
+    z-index: 100; opacity: 0; pointer-events: none; transition: opacity .22s ease;
 }
 .ld-mobile-backdrop[hidden] { display: block !important; visibility: hidden; }
 .ld-mobile-backdrop.is-open { opacity: 1; pointer-events: auto; visibility: visible; }
