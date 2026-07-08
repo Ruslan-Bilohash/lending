@@ -35,7 +35,7 @@ function ld_url(string $path = '', array $qs = []): string
     global $base_path, $lang;
     $url = rtrim($base_path, '/') . '/' . ltrim($path, '/');
     if ($lang !== 'no' && !isset($qs['lang'])) {
-        $qs['lang'] = $lang;
+        $qs['lang'] = ld_lang_public_code($lang);
     }
     return $url . ($qs ? '?' . http_build_query($qs) : '');
 }
@@ -45,10 +45,11 @@ function ld_lang_url(string $code): string
     $uri = $_SERVER['REQUEST_URI'] ?? '/lending/';
     $parts = parse_url($uri);
     parse_str($parts['query'] ?? '', $q);
+    $code = ld_normalize_lang($code);
     if ($code === 'no') {
         unset($q['lang']);
     } else {
-        $q['lang'] = $code;
+        $q['lang'] = ld_lang_public_code($code);
     }
     $path = $parts['path'] ?? '/lending/';
     return $path . ($q ? '?' . http_build_query($q) : '');

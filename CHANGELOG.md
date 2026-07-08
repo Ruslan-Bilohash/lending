@@ -1,5 +1,13 @@
 # Business Landing CMS — Changelog
 
+## 1.6.5 — 2026-07-08
+
+**Deploy:** Hostinger → https://bilohash.com/lending/
+
+- **Hotfix i18n:** `lang=ua` now works (alias for internal `uk`) — fixes Ukrainian locale and ecosystem links
+- **Cookie fix:** invalid `ld_lang=ua` cookie normalized; language switcher + admin panel restored
+- **URLs:** Ukrainian links use `?lang=ua` consistently (matches UA label in UI)
+
 ## 1.6.4 — 2026-07-08
 
 **Deploy:** Hostinger → https://bilohash.com/lending/

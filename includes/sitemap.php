@@ -19,7 +19,7 @@ function ld_sitemap_entries(): array
         foreach ($langs as $code) {
             $qs = $route['qs'];
             if ($code !== 'no') {
-                $qs['lang'] = $code;
+                $qs['lang'] = ld_lang_public_code($code);
             } else {
                 unset($qs['lang']);
             }
@@ -44,7 +44,7 @@ function ld_sitemap_entries(): array
         foreach ($langs as $code) {
             $alternates[$code] = ld_absolute_url('page.php', array_filter([
                 'slug' => $slug,
-                'lang' => $code !== 'no' ? $code : null,
+                'lang' => $code !== 'no' ? ld_lang_public_code($code) : null,
             ]));
         }
         $groups[$key] = [

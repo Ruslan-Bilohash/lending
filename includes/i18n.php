@@ -19,23 +19,47 @@ function ld_langs(): array
     return $LD_LANGS;
 }
 
+/** @return array<string, string> */
+function ld_lang_aliases(): array
+{
+    return ['ua' => 'uk', 'nb' => 'no'];
+}
+
+function ld_normalize_lang(string $code): string
+{
+    $code = strtolower(trim($code));
+    return ld_lang_aliases()[$code] ?? $code;
+}
+
+/** URL/cookie-facing code (UA label → lang=ua, file storage stays uk). */
+function ld_lang_public_code(string $code): string
+{
+    $code = ld_normalize_lang($code);
+    return $code === 'uk' ? 'ua' : $code;
+}
+
 function ld_detect_lang(): string
 {
     global $base_path, $LD_LANGS;
     $codes = array_keys($LD_LANGS);
 
-    if (!empty($_GET['lang']) && in_array($_GET['lang'], $codes, true)) {
-        $chosen = $_GET['lang'];
-        setcookie(LD_LANG_COOKIE, $chosen, [
-            'expires'  => time() + 365 * 86400,
-            'path'     => rtrim($base_path, '/') . '/' ?: '/',
-            'secure'   => !empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off',
-            'samesite' => 'Lax',
-        ]);
-        return $chosen;
+    if (!empty($_GET['lang'])) {
+        $chosen = ld_normalize_lang((string) $_GET['lang']);
+        if (in_array($chosen, $codes, true)) {
+            setcookie(LD_LANG_COOKIE, $chosen, [
+                'expires'  => time() + 365 * 86400,
+                'path'     => rtrim($base_path, '/') . '/' ?: '/',
+                'secure'   => !empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off',
+                'samesite' => 'Lax',
+            ]);
+            return $chosen;
+        }
     }
-    if (!empty($_COOKIE[LD_LANG_COOKIE]) && in_array($_COOKIE[LD_LANG_COOKIE], $codes, true)) {
-        return $_COOKIE[LD_LANG_COOKIE];
+    if (!empty($_COOKIE[LD_LANG_COOKIE])) {
+        $chosen = ld_normalize_lang((string) $_COOKIE[LD_LANG_COOKIE]);
+        if (in_array($chosen, $codes, true)) {
+            return $chosen;
+        }
     }
     return 'no';
 }

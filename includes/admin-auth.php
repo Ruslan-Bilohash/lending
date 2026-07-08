@@ -56,18 +56,23 @@ function ld_admin_detect_lang(): string
     $codes = array_keys(ld_langs());
     $default = LD_ADMIN_LANG_DEFAULT;
 
-    if (!empty($_GET['lang']) && in_array($_GET['lang'], $codes, true)) {
-        $chosen = $_GET['lang'];
-        setcookie(LD_ADMIN_LANG_COOKIE, $chosen, [
-            'expires'  => time() + 365 * 86400,
-            'path'     => rtrim($base_path, '/') . '/admin/',
-            'secure'   => !empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off',
-            'samesite' => 'Lax',
-        ]);
-        return $chosen;
+    if (!empty($_GET['lang'])) {
+        $chosen = ld_normalize_lang((string) $_GET['lang']);
+        if (in_array($chosen, $codes, true)) {
+            setcookie(LD_ADMIN_LANG_COOKIE, $chosen, [
+                'expires'  => time() + 365 * 86400,
+                'path'     => rtrim($base_path, '/') . '/admin/',
+                'secure'   => !empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off',
+                'samesite' => 'Lax',
+            ]);
+            return $chosen;
+        }
     }
-    if (!empty($_COOKIE[LD_ADMIN_LANG_COOKIE]) && in_array($_COOKIE[LD_ADMIN_LANG_COOKIE], $codes, true)) {
-        return $_COOKIE[LD_ADMIN_LANG_COOKIE];
+    if (!empty($_COOKIE[LD_ADMIN_LANG_COOKIE])) {
+        $chosen = ld_normalize_lang((string) $_COOKIE[LD_ADMIN_LANG_COOKIE]);
+        if (in_array($chosen, $codes, true)) {
+            return $chosen;
+        }
     }
 
     return $default;
@@ -205,7 +210,7 @@ function ld_admin_lang_url(string $code): string
     $uri = $_SERVER['REQUEST_URI'] ?? '/lending/admin/';
     $parts = parse_url($uri);
     parse_str($parts['query'] ?? '', $q);
-    $q['lang'] = $code;
+    $q['lang'] = ld_lang_public_code(ld_normalize_lang($code));
     $path = $parts['path'] ?? '/lending/admin/';
     return $path . ($q ? '?' . http_build_query($q) : '');
 }

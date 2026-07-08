@@ -40,7 +40,7 @@ function ld_seo_page_vars(string $lang, bool $is_landing, int $templateId = 1): 
     $path = $is_landing ? ld_url('template.php', ['t' => $templateId]) : ld_url('index.php');
     $canonical = rtrim($site_url, '/') . '/' . ltrim(str_replace($GLOBALS['base_path'] ?? '', '', parse_url($path, PHP_URL_PATH) ?: ''), '/');
     if ($lang !== 'no') {
-        $canonical .= (str_contains($canonical, '?') ? '&' : '?') . 'lang=' . $lang;
+        $canonical .= (str_contains($canonical, '?') ? '&' : '?') . 'lang=' . ld_lang_public_code($lang);
     }
 
     return [
@@ -123,7 +123,7 @@ function ld_render_schema(string $lang): void
 
     $pageUrl = rtrim((string) $site_url, '/') . '/template.php?t=' . ld_active_template();
     if ($lang !== 'no') {
-        $pageUrl .= '&lang=' . $lang;
+        $pageUrl .= '&lang=' . ld_lang_public_code($lang);
     }
     $ogImage = trim((string) (ld_seo()['og_image'] ?? ''));
     if ($ogImage === '') {

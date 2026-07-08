@@ -1,5 +1,5 @@
 <?php
-$current = $LD_LANGS[$lang] ?? $LD_LANGS['lt'];
+$current = $LD_LANGS[$lang] ?? $LD_LANGS['no'];
 ?>
 <div class="ld-lang-dd" id="ldLangDd">
     <button type="button" class="ld-lang-btn" aria-expanded="false" aria-haspopup="listbox">
