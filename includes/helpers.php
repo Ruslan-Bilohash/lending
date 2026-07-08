@@ -120,7 +120,7 @@ function ld_render_stars(int $rating, int $max = 5): string
 
 function ld_is_driving_preset(): bool
 {
-    return (ld_settings()['business_preset'] ?? 'driving_school') === 'driving_school';
+    return (ld_effective_settings()['business_preset'] ?? 'driving_school') === 'driving_school';
 }
 
 function ld_block_process(string $lang): array

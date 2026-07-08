@@ -1,5 +1,15 @@
 # Business Landing CMS — Changelog
 
+## 1.6.6 — 2026-07-08
+
+**Deploy:** Hostinger → https://bilohash.com/lending/
+
+- **Template demos:** each of 10 designs shows the matching business niche per country/language (taxi #9 → «Такси Москва» for RU, «Oslo Taxi» for NO, «Vilniaus Taksi» for LT)
+- **SEO:** country-specific titles, descriptions, keywords per preset × lang; Schema.org `TaxiService`, `Restaurant`, etc.
+- **Cross-links:** hub gallery + landing footer link all 10 templates; `ItemList` in JSON-LD for related demos
+- **Sitemap:** all 10 `template.php?t=N` × 7 languages indexed
+- **i18n:** `crosslinks_*`, `other_templates*`, `demo_banner_generic` in all 7 languages (100% keys)
+
 ## 1.6.5 — 2026-07-08
 
 **Deploy:** Hostinger → https://bilohash.com/lending/

@@ -1,6 +1,11 @@
 <?php
 /** Demo disclaimer — no real services. */
-$demoText = $t['landing']['demo_banner'] ?? ($t['home']['demo_disclaimer'] ?? '');
+$landingT = $t['landing'] ?? [];
+if (function_exists('ld_template_preview_active') && ld_template_preview_active()) {
+    $demoText = $landingT['demo_banner_generic'] ?? ($landingT['demo_banner_short'] ?? ($t['home']['demo_disclaimer'] ?? ''));
+} else {
+    $demoText = $landingT['demo_banner'] ?? ($t['home']['demo_disclaimer'] ?? '');
+}
 if ($demoText === '') {
     return;
 }

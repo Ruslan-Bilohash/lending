@@ -158,12 +158,13 @@ require __DIR__ . '/includes/header.php';
             <a href="<?= ld_h(ld_url('template.php', ['t' => $i])) ?>" class="ld-template-preview <?= ld_h($themeClass) ?> ld-preview-hover" aria-label="<?= ld_h($names[$i] ?? '') ?>">
                 <div class="ld-preview-mock">
                     <span class="ld-preview-icon"><i class="fas <?= ld_h($m['icon']) ?>"></i></span>
-                    <span class="ld-preview-title"><?= ld_h(ld_pick($business['name'], $lang)) ?></span>
+                    <span class="ld-preview-title"><?= ld_h(ld_template_demo_name($i, $lang)) ?></span>
                 </div>
             </a>
             <div class="ld-template-meta">
                 <h2><span class="ld-template-num">#<?= $i ?></span> <?= ld_h($names[$i] ?? '') ?></h2>
                 <p><?= ld_h($m['layout']) ?> · <?= ld_h($m['slug']) ?></p>
+                <p class="ld-template-biz"><?= ld_h(ld_template_demo_name($i, $lang)) ?></p>
                 <a href="<?= ld_h(ld_url('template.php', ['t' => $i])) ?>" class="ld-btn ld-btn-sm ld-btn-primary">
                     <?= ld_h($t['nav']['open'] ?? 'Open') ?> <i class="fas fa-arrow-right"></i>
                 </a>
@@ -171,6 +172,20 @@ require __DIR__ . '/includes/header.php';
         </article>
         <?php endfor; ?>
     </div>
+</section>
+
+<section class="ld-container ld-template-crosslinks" data-reveal>
+    <h2><?= ld_h($h['crosslinks_title'] ?? '') ?></h2>
+    <p class="ld-hub-lead"><?= ld_h($h['crosslinks_lead'] ?? '') ?></p>
+    <nav class="ld-crosslinks-grid" aria-label="<?= ld_h($h['crosslinks_title'] ?? '') ?>">
+        <?php for ($ci = 1; $ci <= 10; $ci++): ?>
+        <a href="<?= ld_h(ld_url('template.php', ['t' => $ci])) ?>" class="ld-crosslink-card">
+            <span class="ld-crosslink-num">#<?= $ci ?></span>
+            <strong><?= ld_h($names[$ci] ?? '') ?></strong>
+            <span><?= ld_h(ld_template_demo_name($ci, $lang)) ?></span>
+        </a>
+        <?php endfor; ?>
+    </nav>
 </section>
 
 <?php ld_render_ecosystem_strip(true); ?>

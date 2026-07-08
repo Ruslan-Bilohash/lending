@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 function ld_seo(): array
 {
-    return ld_settings()['seo'] ?? ld_default_settings()['seo'];
+    return ld_effective_settings()['seo'] ?? ld_default_settings()['seo'];
 }
 
 function ld_seo_page_vars(string $lang, bool $is_landing, int $templateId = 1): array
@@ -30,18 +30,15 @@ function ld_seo_page_vars(string $lang, bool $is_landing, int $templateId = 1): 
     $keywords = ld_pick($seo['keywords'] ?? [], $lang);
     $ogImage = trim((string) ($seo['og_image'] ?? ''));
     if ($ogImage === '') {
-        $ogImage = trim((string) (ld_settings()['blocks']['hero_image'] ?? ''));
+        $ogImage = trim((string) (ld_effective_settings()['blocks']['hero_image'] ?? ''));
     }
     if ($ogImage === '') {
         $ogImage = 'https://bilohash.com/lending/assets/img/og-default.jpg';
     }
 
-    global $site_url;
-    $path = $is_landing ? ld_url('template.php', ['t' => $templateId]) : ld_url('index.php');
-    $canonical = rtrim($site_url, '/') . '/' . ltrim(str_replace($GLOBALS['base_path'] ?? '', '', parse_url($path, PHP_URL_PATH) ?: ''), '/');
-    if ($lang !== 'no') {
-        $canonical .= (str_contains($canonical, '?') ? '&' : '?') . 'lang=' . ld_lang_public_code($lang);
-    }
+    $canonical = $is_landing
+        ? ld_absolute_url('template.php', ['t' => (string) $templateId])
+        : ld_absolute_url('index.php');
 
     return [
         'title' => $title,
@@ -119,18 +116,27 @@ function ld_render_schema(string $lang): void
     if ($phone === '') {
         $phone = trim((string) ($business['phone'] ?? ''));
     }
-    global $site_url;
-
-    $pageUrl = rtrim((string) $site_url, '/') . '/template.php?t=' . ld_active_template();
-    if ($lang !== 'no') {
-        $pageUrl .= '&lang=' . ld_lang_public_code($lang);
-    }
+    $tplId = function_exists('ld_template_preview_active') && ld_template_preview_active()
+        ? (int) ($GLOBALS['ld_template_preview_id'] ?? ld_active_template())
+        : ld_active_template();
+    $pageUrl = ld_absolute_url('template.php', ['t' => (string) $tplId]);
     $ogImage = trim((string) (ld_seo()['og_image'] ?? ''));
     if ($ogImage === '') {
-        $ogImage = trim((string) (ld_settings()['blocks']['hero_image'] ?? ''));
+        $ogImage = trim((string) (ld_effective_settings()['blocks']['hero_image'] ?? ''));
     }
 
-    $bizType = ld_is_driving_preset() ? 'DrivingSchool' : 'LocalBusiness';
+    $presetId = (string) (ld_effective_settings()['business_preset'] ?? 'driving_school');
+    $bizType = match ($presetId) {
+        'driving_school' => 'DrivingSchool',
+        'taxi' => 'TaxiService',
+        'restaurant' => 'Restaurant',
+        'dentist' => 'Dentist',
+        'medical_clinic' => 'MedicalClinic',
+        'law_office' => 'LegalService',
+        'beauty_salon' => 'BeautySalon',
+        'auto_service' => 'AutoRepair',
+        default => 'LocalBusiness',
+    };
     $localId = $pageUrl . '#business';
 
     $businessNode = [
@@ -227,6 +233,27 @@ function ld_render_schema(string $lang): void
                 'name' => $item['q'] ?? '',
                 'acceptedAnswer' => ['@type' => 'Answer', 'text' => $item['a'] ?? ''],
             ], array_slice($faq, 0, 12)),
+        ];
+    }
+
+    if (function_exists('ld_template_preview_active') && ld_template_preview_active()) {
+        global $t;
+        $currentTpl = (int) ($GLOBALS['ld_template_preview_id'] ?? ld_active_template());
+        $crossTitle = (string) ($t['landing']['other_templates'] ?? 'Templates');
+        $crossLinks = ld_template_cross_links($lang, $currentTpl);
+        $graph[] = [
+            '@type' => 'ItemList',
+            '@id' => $pageUrl . '#related-templates',
+            'name' => $crossTitle,
+            'numberOfItems' => count($crossLinks),
+            'itemListElement' => array_map(static function (array $link, int $pos): array {
+                return [
+                    '@type' => 'ListItem',
+                    'position' => $pos + 1,
+                    'name' => trim((string) ($link['label'] ?? '') . ' — ' . (string) ($link['business'] ?? '')),
+                    'url' => ld_absolute_url('template.php', ['t' => (string) ($link['id'] ?? '')]),
+                ];
+            }, $crossLinks, array_keys($crossLinks)),
         ];
     }
 

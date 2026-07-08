@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 function ld_business(): array
 {
-    return ld_settings()['business'] ?? ld_default_settings()['business'];
+    return ld_effective_settings()['business'] ?? ld_default_settings()['business'];
 }
 
 function ld_school(): array
@@ -13,17 +13,17 @@ function ld_school(): array
 
 function ld_hero(): array
 {
-    return ld_settings()['hero'] ?? ld_default_settings()['hero'];
+    return ld_effective_settings()['hero'] ?? ld_default_settings()['hero'];
 }
 
 function ld_sections(): array
 {
-    return ld_settings()['sections'] ?? ld_default_settings()['sections'];
+    return ld_effective_settings()['sections'] ?? ld_default_settings()['sections'];
 }
 
 function ld_currency(): string
 {
-    return (string) (ld_settings()['currency'] ?? '€');
+    return (string) (ld_effective_settings()['currency'] ?? '€');
 }
 
 function ld_localize_list(array $items, string $lang, array $i18nKeys): array
@@ -46,13 +46,13 @@ function ld_localize_list(array $items, string $lang, array $i18nKeys): array
 
 function ld_stats_for(string $lang): array
 {
-    $items = ld_settings()['stats'] ?? [];
+    $items = ld_effective_settings()['stats'] ?? [];
     return ld_localize_list($items, $lang, ['label']);
 }
 
 function ld_services(string $lang): array
 {
-    $items = ld_settings()['services'] ?? [];
+    $items = ld_effective_settings()['services'] ?? [];
     $list = ld_localize_list($items, $lang, ['name', 'desc', 'badge']);
     foreach ($list as &$row) {
         if (($row['badge'] ?? '') === '') {
@@ -65,13 +65,13 @@ function ld_services(string $lang): array
 
 function ld_team(string $lang): array
 {
-    $items = ld_settings()['team'] ?? [];
+    $items = ld_effective_settings()['team'] ?? [];
     return ld_localize_list($items, $lang, ['role']);
 }
 
 function ld_faq(string $lang): array
 {
-    $items = ld_settings()['faq'] ?? [];
+    $items = ld_effective_settings()['faq'] ?? [];
     return ld_localize_list($items, $lang, ['q', 'a']);
 }
 
@@ -87,12 +87,12 @@ function ld_instructors(string $lang): array
 
 function ld_google(): array
 {
-    return ld_settings()['google'] ?? ld_default_settings()['google'];
+    return ld_effective_settings()['google'] ?? ld_default_settings()['google'];
 }
 
 function ld_reviews(string $lang): array
 {
-    $items = ld_settings()['reviews'] ?? [];
+    $items = ld_effective_settings()['reviews'] ?? [];
     return ld_localize_list($items, $lang, ['text']);
 }
 
@@ -160,7 +160,7 @@ function ld_has_map(): bool
 
 function ld_has_reviews(): bool
 {
-    $items = ld_settings()['reviews'] ?? [];
+    $items = ld_effective_settings()['reviews'] ?? [];
     if (is_array($items) && $items !== []) {
         return true;
     }
@@ -184,16 +184,16 @@ function ld_section_text(string $key, string $field, string $lang, string $fallb
 function ld_template_names(string $lang): array
 {
     $names = [
-        1  => ['lt' => 'Klasikinis mėlynas', 'uk' => 'Класичний синій', 'ru' => 'Классический синий', 'en' => 'Classic Blue'],
-        2  => ['lt' => 'Saulėlydžio važiavimas', 'uk' => 'Захід сонця', 'ru' => 'Закат солнца', 'en' => 'Sunset Drive'],
-        3  => ['lt' => 'Miško saugumas', 'uk' => 'Лісова безпека', 'ru' => 'Лесная безопасность', 'en' => 'Forest Safe'],
-        4  => ['lt' => 'Naktinis modernus', 'uk' => 'Нічний модерн', 'ru' => 'Ночной модерн', 'en' => 'Night Modern'],
-        5  => ['lt' => 'Minimalus šviesus', 'uk' => 'Мінімал світлий', 'ru' => 'Минимал светлый', 'en' => 'Minimal Light'],
-        6  => ['lt' => 'Lenktynių raudonas', 'uk' => 'Гоночний червоний', 'ru' => 'Гоночный красный', 'en' => 'Racing Red'],
-        7  => ['lt' => 'Premium violetinis', 'uk' => 'Преміум фіолет', 'ru' => 'Премиум фиолет', 'en' => 'Premium Purple'],
-        8  => ['lt' => 'Miesto žydras', 'uk' => 'Міський бірюза', 'ru' => 'Городская бирюза', 'en' => 'Teal Urban'],
-        9  => ['lt' => 'Taksi geltonas', 'uk' => 'Таксі жовтий', 'ru' => 'Такси жёлтый', 'en' => 'Taxi Yellow'],
-        10 => ['lt' => 'Korporacinis pilkas', 'uk' => 'Корпоративний сірий', 'ru' => 'Корпоративный серый', 'en' => 'Slate Corporate'],
+        1  => ['no' => 'Klassisk blå', 'sv' => 'Klassisk blå', 'pl' => 'Klasyczny niebieski', 'lt' => 'Klasikinis mėlynas', 'uk' => 'Класичний синій', 'ru' => 'Классический синий', 'en' => 'Classic Blue'],
+        2  => ['no' => 'Solnedgang kjøring', 'sv' => 'Solnedgångskörning', 'pl' => 'Zachód słońca', 'lt' => 'Saulėlydžio važiavimas', 'uk' => 'Захід сонця', 'ru' => 'Закат солнца', 'en' => 'Sunset Drive'],
+        3  => ['no' => 'Skog trygg', 'sv' => 'Skog säker', 'pl' => 'Leśne bezpieczeństwo', 'lt' => 'Miško saugumas', 'uk' => 'Лісова безпека', 'ru' => 'Лесная безопасность', 'en' => 'Forest Safe'],
+        4  => ['no' => 'Natt moderne', 'sv' => 'Natt modern', 'pl' => 'Nocny modern', 'lt' => 'Naktinis modernus', 'uk' => 'Нічний модерн', 'ru' => 'Ночной модерн', 'en' => 'Night Modern'],
+        5  => ['no' => 'Minimal lys', 'sv' => 'Minimal ljus', 'pl' => 'Minimal jasny', 'lt' => 'Minimalus šviesus', 'uk' => 'Мінімал світлий', 'ru' => 'Минимал светлый', 'en' => 'Minimal Light'],
+        6  => ['no' => 'Racing rød', 'sv' => 'Racing röd', 'pl' => 'Wyścigowy czerwony', 'lt' => 'Lenktynių raudonas', 'uk' => 'Гоночний червоний', 'ru' => 'Гоночный красный', 'en' => 'Racing Red'],
+        7  => ['no' => 'Premium lilla', 'sv' => 'Premium lila', 'pl' => 'Premium fiolet', 'lt' => 'Premium violetinis', 'uk' => 'Преміум фіолет', 'ru' => 'Премиум фиолет', 'en' => 'Premium Purple'],
+        8  => ['no' => 'Teal urban', 'sv' => 'Teal urban', 'pl' => 'Miejski teal', 'lt' => 'Miesto žydras', 'uk' => 'Міський бірюза', 'ru' => 'Городская бирюза', 'en' => 'Teal Urban'],
+        9  => ['no' => 'Taxi gul', 'sv' => 'Taxi gul', 'pl' => 'Taxi żółty', 'lt' => 'Taksi geltonas', 'uk' => 'Таксі жовтий', 'ru' => 'Такси жёлтый', 'en' => 'Taxi Yellow'],
+        10 => ['no' => 'Skifer corporate', 'sv' => 'Skiffer corporate', 'pl' => 'Korporacyjny szary', 'lt' => 'Korporacinis pilkas', 'uk' => 'Корпоративний сірий', 'ru' => 'Корпоративный серый', 'en' => 'Slate Corporate'],
     ];
     $out = [];
     foreach ($names as $id => $row) {

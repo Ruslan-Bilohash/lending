@@ -339,6 +339,40 @@ function ld_presets_catalog_data(): array
                 ],
             ],
         ],
+        'taxi' => [
+            'icon' => 'fa-taxi', 'template' => 9,
+            'brief' => 'Taxi service: airport transfers, city rides, corporate accounts. NO/SV/PL/EN/LT/UA/RU.',
+            'label' => ld_pi('Taksi', 'Таксі', 'Taxi', null, 'Taxi', 'Taxi', 'Taxi'),
+            'desc' => ld_pi('Miesto ir oro uosto pervežimai', 'Міські та аеропортові поїздки', 'City & airport transfers', null, 'By og flyplass', 'Stad och flygplats', 'Miasto i lotnisko'),
+            'build' => [
+                'name' => ld_pi('City Taxi', 'City Taxi', 'City Taxi', null, 'City Taxi', 'City Taxi', 'City Taxi'),
+                'tagline' => ld_pi('Užsakyti taksi online — fiksuotas tarifas, 24/7', 'Замовити таксі online — фіксований тариф, 24/7', 'Book taxi online — fixed fare, 24/7', null, 'Bestill taxi online — fast pris, 24/7', 'Boka taxi online — fast pris, dygnet runt', 'Zamów taxi online — stała cena, 24/7'),
+                'hero_icon' => 'fa-taxi',
+                'cta' => ld_pi('Užsakyti taksi', 'Замовити таксі', 'Book taxi', null, 'Bestill taxi', 'Boka taxi', 'Zamów taxi'),
+                'cta2' => ld_pi('Kainos', 'Ціни', 'Fares', null, 'Priser', 'Priser', 'Cennik'),
+                'phone' => '+47 22 12 34 56', 'email' => 'book@citytaxi.demo', 'template' => 9,
+                'og_image' => 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1200&h=630&fit=crop',
+                'ai_prompt' => 'Taxi service assistant for {business_name} in {city}. Help with booking, airport transfer, fixed fares, corporate accounts, ETA. Language: {lang}. Plain text only.',
+                'section_services_title' => ld_pi('Taksi paslaugos', 'Послуги таксі', 'Taxi services', null, 'Taksitjenester', 'Taxitjänster', 'Usługi taxi'),
+                'services' => [
+                    ['icon' => 'fa-taxi', 'name' => ld_pi('Miesto taksi', 'Міське таксі', 'City ride', null, 'Bytaxi', 'Stadstaxi', 'Taxi miejskie'), 'desc' => ld_pi('Greitas atvykimas per 5–10 min.', 'Прибуття за 5–10 хв.', 'Arrival in 5–10 min.', null, 'Henting på 5–10 min.', 'Hämtning på 5–10 min.', 'Przyjazd w 5–10 min.'), 'price' => '12'],
+                    ['icon' => 'fa-plane', 'name' => ld_pi('Oro uostas', 'Аеропорт', 'Airport transfer', null, 'Flyplass', 'Flygplats', 'Lotnisko'), 'desc' => ld_pi('Fiksuotas tarifas į oro uostą.', 'Фіксований тариф до аеропорту.', 'Fixed fare to airport.', null, 'Fast pris til flyplassen.', 'Fast pris till flygplatsen.', 'Stała cena na lotnisko.'), 'price' => '45', 'badge' => ld_pi('Populiaru', 'Популярно', 'Popular', null, 'Populært', 'Populärt', 'Popularne')],
+                    ['icon' => 'fa-briefcase', 'name' => ld_pi('Verslui', 'Для бізнесу', 'Corporate', null, 'Bedrift', 'Företag', 'Firmowe'), 'desc' => ld_pi('Sąskaitos faktūros ir vairuotojų pasirinkimas.', 'Рахунки та вибір водіїв.', 'Invoicing and driver preference.', null, 'Faktura og faste sjåfører.', 'Faktura och fasta förare.', 'Faktury i stały kierowca.'), 'price' => ''],
+                    ['icon' => 'fa-wheelchair', 'name' => ld_pi('Prieinamumas', 'Доступність', 'Accessible', null, 'Tilgjengelig', 'Tillgänglig', 'Dostępne'), 'desc' => ld_pi('Automobiliai su vaikų kėdutėmis.', 'Авто з дитячими кріслами.', 'Child seats on request.', null, 'Barneseter på forespørsel.', 'Barnstol på begäran.', 'Foteliki na życzenie.'), 'price' => ''],
+                ],
+                'faq' => [
+                    ['q' => ld_pi('Kaip užsisakyti?', 'Як замовити?', 'How to book?', null, 'Hvordan bestille?', 'Hur bokar man?', 'Jak zamówić?'), 'a' => ld_pi('Forma arba telefonu — atvykstame per 10 min.', 'Форма або телефон — приїдемо за 10 хв.', 'Form or phone — we arrive in 10 min.', null, 'Skjema eller telefon — vi er der på 10 min.', 'Formulär eller telefon — vi är där på 10 min.', 'Formularz lub telefon — przyjedziemy w 10 min.')],
+                    ['q' => ld_pi('Ar kaina fiksuota?', 'Чи фіксована ціна?', 'Fixed price?', null, 'Fast pris?', 'Fast pris?', 'Stała cena?'), 'a' => ld_pi('Taip — matote kainą prieš patvirtinant.', 'Так — бачите ціну перед підтвердженням.', 'Yes — see fare before confirming.', null, 'Ja — du ser prisen før du bekrefter.', 'Ja — du ser priset innan du bekräftar.', 'Tak — widzisz cenę przed potwierdzeniem.')],
+                    ['q' => ld_pi('Ar veikiate naktį?', 'Чи працюєте вночі?', 'Night service?', null, 'Kjører dere om natten?', 'Kör ni på natten?', 'Nocą?'), 'a' => ld_pi('Taip — 24/7, įskaitant šventes.', 'Так — 24/7, включно зі святами.', 'Yes — 24/7 including holidays.', null, 'Ja — 24/7, også helligdager.', 'Ja — 24/7, även helgdagar.', 'Tak — 24/7, także święta.')],
+                ],
+                'stats' => [
+                    ['value' => '50 000+', 'label' => ld_pi('Keleivių', 'Пасажирів', 'Rides', null, 'Kunder', 'Resor', 'Kursów')],
+                    ['value' => '4.9', 'label' => ld_pi('Google reitingas', 'Рейтинг Google', 'Google rating', null, 'Google-vurdering', 'Google-betyg', 'Ocena Google')],
+                    ['value' => '5 min', 'label' => ld_pi('Atvykimas', 'Прибуття', 'Pickup ETA', null, 'Hentetid', 'Hämttid', 'Czas przyjazdu')],
+                    ['value' => '24/7', 'label' => ld_pi('Darbo laikas', 'Графік', 'Availability', null, 'Døgnåpent', 'Dygnet runt', 'Całą dobę')],
+                ],
+            ],
+        ],
         'barbershop' => [
             'icon' => 'fa-scissors', 'template' => 1,
             'brief' => 'Barber shop vyrams: kirpimas, barzda, vaikų kirpimas. LT/UA/RU/EN.',
@@ -390,3 +424,4 @@ function ld_preset_hotel(): array { return ld_preset_from_catalog('hotel'); }
 function ld_preset_kindergarten(): array { return ld_preset_from_catalog('kindergarten'); }
 function ld_preset_pharmacy(): array { return ld_preset_from_catalog('pharmacy'); }
 function ld_preset_barbershop(): array { return ld_preset_from_catalog('barbershop'); }
+function ld_preset_taxi(): array { return ld_preset_from_catalog('taxi'); }

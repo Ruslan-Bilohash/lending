@@ -20,6 +20,28 @@
     $l = $t['landing'] ?? [];
 ?>
 <footer class="ld-landing-footer">
+    <?php
+    $tplCrossId = (int) ($template_id ?? 0);
+    if ($tplCrossId >= 1 && $tplCrossId <= 10):
+        $tplNames = ld_template_names($lang);
+        $tplCross = ld_template_cross_links($lang, $tplCrossId);
+    ?>
+    <section class="ld-landing-crosslinks">
+        <div class="ld-container">
+            <h3><?= ld_h($l['other_templates'] ?? '') ?></h3>
+            <p class="ld-crosslinks-lead"><?= ld_h($l['other_templates_lead'] ?? '') ?></p>
+            <nav class="ld-crosslinks-grid ld-crosslinks-grid--compact" aria-label="<?= ld_h($l['other_templates'] ?? '') ?>">
+                <?php foreach ($tplCross as $cross): ?>
+                <a href="<?= ld_h($cross['url']) ?>" class="ld-crosslink-card">
+                    <span class="ld-crosslink-num">#<?= (int) $cross['id'] ?></span>
+                    <strong><?= ld_h($cross['label']) ?></strong>
+                    <span><?= ld_h($cross['business']) ?></span>
+                </a>
+                <?php endforeach; ?>
+            </nav>
+        </div>
+    </section>
+    <?php endif; ?>
     <?php ld_render_social_links($lang); ?>
     <p><?= ld_h($l['footer_copy'] ?? '') ?></p>
     <p class="ld-footer-links">

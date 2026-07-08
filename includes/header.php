@@ -4,7 +4,7 @@ $page_desc  = $page_desc ?? ($t['meta']['description'] ?? '');
 $body_class = $body_class ?? '';
 $template_id = $template_id ?? 0;
 $is_landing = !empty($is_landing);
-$css_ver = '10';
+$css_ver = '11';
 ?>
 <!DOCTYPE html>
 <html lang="<?= ld_h($lang_meta['html'] ?? 'lt') ?>">

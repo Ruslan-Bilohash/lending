@@ -6,6 +6,7 @@ require_once __DIR__ . '/includes/helpers.php';
 require_once __DIR__ . '/includes/admin-auth.php';
 require_once __DIR__ . '/includes/storage.php';
 require_once __DIR__ . '/includes/business-presets.php';
+require_once __DIR__ . '/includes/template-demos.php';
 require_once __DIR__ . '/includes/data.php';
 require_once __DIR__ . '/includes/seo.php';
 require_once __DIR__ . '/includes/recaptcha.php';

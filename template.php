@@ -2,6 +2,7 @@
 require_once __DIR__ . '/init.php';
 
 $template_id = ld_template_id();
+ld_set_template_preview($template_id);
 $names = ld_template_names($lang);
 $business = ld_business();
 

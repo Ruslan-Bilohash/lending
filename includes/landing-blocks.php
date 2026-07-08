@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 function ld_blocks(): array
 {
-    return ld_settings()['blocks'] ?? ld_default_settings()['blocks'];
+    return ld_effective_settings()['blocks'] ?? ld_default_settings()['blocks'];
 }
 
 function ld_block_features(string $lang): array

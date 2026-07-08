@@ -57,6 +57,7 @@ function ld_business_presets(): array
         'kindergarten' => ld_preset_kindergarten(),
         'pharmacy' => ld_preset_pharmacy(),
         'barbershop' => ld_preset_barbershop(),
+        'taxi' => ld_preset_taxi(),
     ];
 
     $cache = $presets;

@@ -10,8 +10,15 @@ function ld_sitemap_entries(): array
 
     $staticRoutes = [
         ['path' => 'index.php', 'priority' => '0.7', 'changefreq' => 'weekly', 'qs' => []],
-        ['path' => 'template.php', 'priority' => '1.0', 'changefreq' => 'weekly', 'qs' => ['t' => (string) ld_active_template()]],
     ];
+    for ($t = 1; $t <= 10; $t++) {
+        $staticRoutes[] = [
+            'path' => 'template.php',
+            'priority' => $t === ld_active_template() ? '1.0' : '0.9',
+            'changefreq' => 'weekly',
+            'qs' => ['t' => (string) $t],
+        ];
+    }
 
     foreach ($staticRoutes as $route) {
         $key = $route['path'] . '?' . http_build_query($route['qs']);
