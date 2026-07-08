@@ -1,5 +1,12 @@
 # Business Landing CMS — Changelog
 
+## 1.6.1 — 2026-07-08
+
+**Deploy:** Hostinger → https://bilohash.com/lending/
+
+- **Admin nav:** sidebar grouped into dropdown categories (content, CRM, design, SEO, help)
+- **i18n:** nav group labels in 7 languages; badge for new leads
+
 ## 1.6.0 — 2026-07-08
 
 **Deploy:** Hostinger → https://bilohash.com/lending/ · **GitHub:** https://github.com/Ruslan-Bilohash/lending
