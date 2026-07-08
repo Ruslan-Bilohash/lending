@@ -73,33 +73,17 @@ function ld_preset_build(array $cfg): array
     $gallery = $cfg['gallery'] ?? [['url' => $ogImage, 'caption' => $name]];
     $heroImage = (string) ($cfg['hero_image'] ?? str_replace(['w=1200', 'h=630'], ['w=900', 'h=600'], $ogImage));
 
-    $seoTitle = $cfg['seo_title'] ?? ld_pi(
-        ld_pick($name, 'lt') . ' Vilniuje — užsiregistruokite',
-        ld_pick($name, 'uk') . ' у Вільнюсі — запис онлайн',
-        ld_pick($name, 'en') . ' Oslo — book online',
-        ld_pick($name, 'ru') . ' Осло — запись онлайн',
-        ld_pick($name, 'no') . ' Oslo — bestill time',
-        ld_pick($name, 'sv') . ' Oslo — boka online',
-        ld_pick($name, 'pl') . ' Oslo — rezerwacja online'
-    );
-    $seoDesc = $cfg['seo_description'] ?? $tagline;
-    $seoKw = $cfg['seo_keywords'] ?? ld_pi(
-        ld_pick($name, 'lt') . ', Vilnius, paslaugos, užrašymas',
-        ld_pick($name, 'uk') . ', Вільнюс, послуги, запис',
-        ld_pick($name, 'en') . ', Oslo, Norway, services, booking',
-        ld_pick($name, 'ru') . ', Осло, Норвегия, услуги, запись',
-        ld_pick($name, 'no') . ', Oslo, Norge, tjenester, bestilling',
-        ld_pick($name, 'sv') . ', Oslo, Norge, tjänster, bokning',
-        ld_pick($name, 'pl') . ', Oslo, Norwegia, usługi, rezerwacja'
-    );
+    $seoTitle = $cfg['seo_title'] ?? ld_preset_country_seo_titles($name);
+    $seoDesc = $cfg['seo_description'] ?? ld_preset_country_seo_descriptions($name, $tagline);
+    $seoKw = $cfg['seo_keywords'] ?? ld_preset_country_seo_keywords($name);
 
     return [
         'currency' => (string) ($cfg['currency'] ?? 'kr'),
         'business' => [
             'name' => $name,
             'tagline' => $tagline,
-            'city' => $cfg['city'] ?? ld_pi('Vilnius, Lietuva', 'Вільнюс, Литва', 'Oslo, Norway', null, 'Oslo, Norge', 'Oslo, Norge', 'Oslo, Norwegia'),
-            'address' => $cfg['address'] ?? ld_pi('Konstitucijos pr. 12, LT-09308 Vilnius', 'пр. Конституції 12, LT-09308 Вільнюс', 'Karl Johans gate 15, 0154 Oslo', null, 'Karl Johans gate 15, 0154 Oslo', 'Karl Johans gate 15, 0154 Oslo', 'Karl Johans gate 15, 0154 Oslo'),
+            'city' => $cfg['city'] ?? ld_country_field('city_full'),
+            'address' => $cfg['address'] ?? ld_country_field('address'),
             'phone' => (string) ($cfg['phone'] ?? '+47 22 12 34 56'),
             'email' => (string) ($cfg['email'] ?? 'info@' . ($slug ?: 'business') . '.demo'),
             'hours' => $cfg['hours'] ?? ld_pi('Pr–Pn 9:00–18:00 · Št 10:00–14:00', 'Пн–Пт 9:00–18:00 · Сб 10:00–14:00', 'Mon–Fri 9:00–18:00 · Sat 10:00–14:00', null, 'Man–fre 9:00–18:00 · lør 10:00–14:00', 'Mån–fre 9:00–18:00 · lör 10:00–14:00', 'Pon–pt 9:00–18:00 · sob 10:00–14:00'),
@@ -109,7 +93,7 @@ function ld_preset_build(array $cfg): array
             'cta2' => $cfg['cta2'] ?? ld_pi('Paslaugos', 'Послуги', 'Services'),
             'visual_icon' => $heroIcon,
             'visual_label' => $cfg['visual_label'] ?? $name,
-            'visual_sub' => $cfg['visual_sub'] ?? ld_pi('Vilnius', 'Вільнюс', 'Oslo', null, 'Oslo', 'Oslo', 'Oslo'),
+            'visual_sub' => $cfg['visual_sub'] ?? ld_country_field('city'),
         ],
         'sections' => $defaultSections,
         'stats' => $stats,

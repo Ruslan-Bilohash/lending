@@ -1,0 +1,1637 @@
+﻿[
+    {
+        "key":  "admin.active_template",
+        "en":  "Active template (live)",
+        "no":  "Aktiv mal (live)"
+    },
+    {
+        "key":  "admin.address",
+        "en":  "Address",
+        "no":  "Adresse"
+    },
+    {
+        "key":  "admin.admin_lang_menu",
+        "en":  "Admin panel language",
+        "no":  "Adminpanel-språk"
+    },
+    {
+        "key":  "admin.ai",
+        "en":  "AI agent",
+        "no":  "AI-agent"
+    },
+    {
+        "key":  "admin.ai_active_models",
+        "en":  "Active models",
+        "no":  "Aktive modeller"
+    },
+    {
+        "key":  "admin.ai_admin_model",
+        "en":  "Admin fill model",
+        "no":  "Admin-fyll-modell"
+    },
+    {
+        "key":  "admin.ai_api_base_label",
+        "en":  "API endpoint URL",
+        "no":  "API endepunkt-URL"
+    },
+    {
+        "key":  "admin.ai_chat_label",
+        "en":  "landing chat",
+        "no":  "landing-chat"
+    },
+    {
+        "key":  "admin.ai_chat_model",
+        "en":  "Landing chat model",
+        "no":  "Landing chat-modell"
+    },
+    {
+        "key":  "admin.ai_custom_model",
+        "en":  "custom model",
+        "no":  "egen modell"
+    },
+    {
+        "key":  "admin.ai_fill_generating",
+        "en":  "AI generating…",
+        "no":  "AI genererer…"
+    },
+    {
+        "key":  "admin.ai_fill_model",
+        "en":  "Auto-fill model",
+        "no":  "Autofyll-modell"
+    },
+    {
+        "key":  "admin.ai_fill_placeholder",
+        "en":  "E.g. Dental clinic in Vilnius, implants, bilingual team LT/UA/EN…",
+        "no":  "F.eks. Tannklinikk i Oslo, implantater, flerspråklig team NO/SV/EN…"
+    },
+    {
+        "key":  "admin.ai_fill_saved",
+        "en":  "AI fill saved successfully.",
+        "no":  "AI-fyll lagret."
+    },
+    {
+        "key":  "admin.ai_fill_title",
+        "en":  "AI agent — auto fill",
+        "no":  "AI-agent — autofyll"
+    },
+    {
+        "key":  "admin.ai_key_missing",
+        "en":  "Demo mode",
+        "no":  "Demomodus"
+    },
+    {
+        "key":  "admin.ai_key_set",
+        "en":  "API connected",
+        "no":  "API tilkoblet"
+    },
+    {
+        "key":  "admin.ai_settings_link",
+        "en":  "AI settings",
+        "no":  "AI-innstillinger"
+    },
+    {
+        "key":  "admin.ai_system_prompt",
+        "en":  "System prompt (chat)",
+        "no":  "Systemprompt (chat)"
+    },
+    {
+        "key":  "admin.ai_welcome_label",
+        "en":  "Welcome",
+        "no":  "Velkomst"
+    },
+    {
+        "key":  "admin.api_guide_faktura_step2",
+        "en":  "Set country code (lt) and print design (classic-blue).",
+        "no":  "Sett landskode (no) og utskriftsdesign (classic-blue)."
+    },
+    {
+        "key":  "admin.api_guide_recaptcha_intro",
+        "en":  "Protect the contact form from bots.",
+        "no":  "Beskytt kontaktskjemaet mot roboter."
+    },
+    {
+        "key":  "admin.api_guide_recaptcha_step1",
+        "en":  "Register the site at google.com/recaptcha/admin (reCAPTCHA v2 «I\u0027m not a robot»).",
+        "no":  "Registrer nettstedet på google.com/recaptcha/admin (reCAPTCHA v2 «Jeg er ikke en robot»)."
+    },
+    {
+        "key":  "admin.api_guide_recaptcha_step2",
+        "en":  "Copy Site key → public field, Secret key → private field.",
+        "no":  "Kopier Site key → offentlig felt, Secret key → privat felt."
+    },
+    {
+        "key":  "admin.api_guide_title",
+        "en":  "API setup guide",
+        "no":  "API-oppsettguide"
+    },
+    {
+        "key":  "admin.block_cta_phone",
+        "en":  "Phone override",
+        "no":  "Telefonoverstyring"
+    },
+    {
+        "key":  "admin.block_features",
+        "en":  "Features",
+        "no":  "Fordeler"
+    },
+    {
+        "key":  "admin.block_gallery",
+        "en":  "Gallery",
+        "no":  "Galleri"
+    },
+    {
+        "key":  "admin.block_hero_hint",
+        "en":  "Split templates — photo beside headline",
+        "no":  "Split-maler — bilde ved siden av overskrift"
+    },
+    {
+        "key":  "admin.block_hero_pick",
+        "en":  "Main hero image",
+        "no":  "Hovedbilde hero"
+    },
+    {
+        "key":  "admin.block_image",
+        "en":  "image",
+        "no":  "bilde"
+    },
+    {
+        "key":  "admin.block_partners",
+        "en":  "Partners",
+        "no":  "Partnere"
+    },
+    {
+        "key":  "admin.block_promo",
+        "en":  "Promo banner",
+        "no":  "Kampanjebanner"
+    },
+    {
+        "key":  "admin.block_social",
+        "en":  "Social",
+        "no":  "Sosiale medier"
+    },
+    {
+        "key":  "admin.block_video_hint",
+        "en":  "YouTube URL → embedded player",
+        "no":  "YouTube-URL → innebygd spiller"
+    },
+    {
+        "key":  "admin.block_video_url",
+        "en":  "YouTube / embed URL",
+        "no":  "YouTube / embed-URL"
+    },
+    {
+        "key":  "admin.blocks",
+        "en":  "Blocks \u0026 images",
+        "no":  "Blokker og bilder"
+    },
+    {
+        "key":  "admin.chart_aria_revenue",
+        "en":  "Invoice revenue",
+        "no":  "Fakturaomsetning"
+    },
+    {
+        "key":  "admin.chart_eur",
+        "en":  "EUR",
+        "no":  "NOK"
+    },
+    {
+        "key":  "admin.chart_revenue_monthly",
+        "en":  "Invoice revenue (monthly)",
+        "no":  "Fakturaomsetning (månedlig)"
+    },
+    {
+        "key":  "admin.checklist_all_done",
+        "en":  "Everything is filled — ready to publish!",
+        "no":  "Alt er fylt ut — klar til publisering!"
+    },
+    {
+        "key":  "admin.checklist_done_summary",
+        "en":  "Completed ({n})",
+        "no":  "Fullført ({n})"
+    },
+    {
+        "key":  "admin.checklist_hint_maps",
+        "en":  "Local clients check how to find you — map or full address is essential.",
+        "no":  "Lokale kunder sjekker hvordan de finner deg — kart eller full adresse er viktig."
+    },
+    {
+        "key":  "admin.checklist_hint_seo",
+        "en":  "Google shows these in search — write for humans, include city and service.",
+        "no":  "Google viser disse i søk — skriv for mennesker, inkluder by og tjeneste."
+    },
+    {
+        "key":  "admin.checklist_hint_services",
+        "en":  "Visitors decide in seconds — show what you offer and from what price.",
+        "no":  "Besøkende bestemmer seg på sekunder — vis hva du tilbyr og fra hvilken pris."
+    },
+    {
+        "key":  "admin.checklist_hint_team",
+        "en":  "Faces and names build trust before the first call.",
+        "no":  "Ansikter og navn bygger tillit før første samtale."
+    },
+    {
+        "key":  "admin.checklist_item_faq",
+        "en":  "FAQ (3+ questions)",
+        "no":  "FAQ (3+ spørsmål)"
+    },
+    {
+        "key":  "admin.checklist_item_hero",
+        "en":  "Hero block with CTA button",
+        "no":  "Hero-blokk med CTA-knapp"
+    },
+    {
+        "key":  "admin.checklist_item_maps",
+        "en":  "Google Maps or address",
+        "no":  "Google Maps eller adresse"
+    },
+    {
+        "key":  "admin.checklist_item_phone",
+        "en":  "Phone number",
+        "no":  "Telefonnummer"
+    },
+    {
+        "key":  "admin.checklist_item_seo",
+        "en":  "SEO title \u0026 description",
+        "no":  "SEO title og description"
+    },
+    {
+        "key":  "admin.checklist_item_services",
+        "en":  "At least one service with price",
+        "no":  "Minst én tjeneste med pris"
+    },
+    {
+        "key":  "admin.checklist_item_team",
+        "en":  "Team or contact person",
+        "no":  "Team eller kontaktperson"
+    },
+    {
+        "key":  "admin.checklist_missing_hero",
+        "en":  "Hero primary button (CTA) empty for: {langs}",
+        "no":  "Hero primærknapp (CTA) tom for: {langs}"
+    },
+    {
+        "key":  "admin.checklist_missing_seo_langs",
+        "en":  "SEO title \u0026 description incomplete for: {langs}",
+        "no":  "SEO title og description ufullstendig for: {langs}"
+    },
+    {
+        "key":  "admin.checklist_title",
+        "en":  "Launch checklist",
+        "no":  "Lanserings-sjekkliste"
+    },
+    {
+        "key":  "admin.city",
+        "en":  "City",
+        "no":  "By"
+    },
+    {
+        "key":  "admin.constructor_tip",
+        "en":  "Tip",
+        "no":  "Tips"
+    },
+    {
+        "key":  "admin.contact",
+        "en":  "Contact",
+        "no":  "Kontakt"
+    },
+    {
+        "key":  "admin.currency",
+        "en":  "Currency",
+        "no":  "Valuta"
+    },
+    {
+        "key":  "admin.design_accent",
+        "en":  "Accent color",
+        "no":  "Aksentfarge"
+    },
+    {
+        "key":  "admin.design_accent_hint",
+        "en":  "Overrides theme primary on live site",
+        "no":  "Overstyrer temaets primærfarge på live-siden"
+    },
+    {
+        "key":  "admin.design_btn_pill",
+        "en":  "Pill",
+        "no":  "Pille"
+    },
+    {
+        "key":  "admin.design_btn_rounded",
+        "en":  "Rounded",
+        "no":  "Avrundet"
+    },
+    {
+        "key":  "admin.design_btn_square",
+        "en":  "Square",
+        "no":  "Firkantet"
+    },
+    {
+        "key":  "admin.design_buttons",
+        "en":  "Buttons",
+        "no":  "Knapper"
+    },
+    {
+        "key":  "admin.design_demos",
+        "en":  "Demo designs",
+        "no":  "Demodesign"
+    },
+    {
+        "key":  "admin.design_font_scale",
+        "en":  "Font scale",
+        "no":  "Skriftstørrelse"
+    },
+    {
+        "key":  "admin.design_help",
+        "en":  "Landing constructor: demo styles, templates, colors, sections.",
+        "no":  "Landingkonstruktør: demostiler, maler, farger, seksjoner."
+    },
+    {
+        "key":  "admin.design_hero",
+        "en":  "Hero style",
+        "no":  "Hero-stil"
+    },
+    {
+        "key":  "admin.design_hero_default",
+        "en":  "Default",
+        "no":  "Standard"
+    },
+    {
+        "key":  "admin.design_hero_full",
+        "en":  "Full width",
+        "no":  "Full bredde"
+    },
+    {
+        "key":  "admin.design_options",
+        "en":  "Style options",
+        "no":  "Stilvalg"
+    },
+    {
+        "key":  "admin.design_preset_applied",
+        "en":  "Demo design applied",
+        "no":  "Demodesign brukt"
+    },
+    {
+        "key":  "admin.design_sections",
+        "en":  "Page sections",
+        "no":  "Sideseksjoner"
+    },
+    {
+        "key":  "admin.design_template_hint",
+        "en":  "Click preview — save form to apply.",
+        "no":  "Klikk forhåndsvisning — lagre skjema for å bruke."
+    },
+    {
+        "key":  "admin.email",
+        "en":  "Email",
+        "no":  "E-post"
+    },
+    {
+        "key":  "admin.faktura_all",
+        "en":  "All in Faktura",
+        "no":  "Alt i Faktura"
+    },
+    {
+        "key":  "admin.faktura_auto",
+        "en":  "Auto-invoice after lead",
+        "no":  "Auto-faktura etter henvendelse"
+    },
+    {
+        "key":  "admin.faktura_country_id_label",
+        "en":  "Country code",
+        "no":  "Landskode"
+    },
+    {
+        "key":  "admin.faktura_missing",
+        "en":  "Faktura Creator is not installed on this server.",
+        "no":  "Faktura Creator er ikke installert på denne serveren."
+    },
+    {
+        "key":  "admin.faktura_print_design",
+        "en":  "Print design",
+        "no":  "Utskriftsdesign"
+    },
+    {
+        "key":  "admin.faktura_support_link",
+        "en":  "Faktura support",
+        "no":  "Faktura-support"
+    },
+    {
+        "key":  "admin.google_maps_embed",
+        "en":  "Maps embed URL",
+        "no":  "Kart embed-URL"
+    },
+    {
+        "key":  "admin.google_maps_link",
+        "en":  "Maps link",
+        "no":  "Kartlenke"
+    },
+    {
+        "key":  "admin.google_rating",
+        "en":  "Google rating",
+        "no":  "Google-vurdering"
+    },
+    {
+        "key":  "admin.google_reviews",
+        "en":  "Review cards",
+        "no":  "Anmeldelseskort"
+    },
+    {
+        "key":  "admin.help_lead",
+        "en":  "API setup guides — AI, reCAPTCHA and Faktura invoices for Business Landing CMS.",
+        "no":  "API-oppsett — AI, reCAPTCHA og Faktura-fakturaer for Business Landing CMS."
+    },
+    {
+        "key":  "admin.hero_cta",
+        "en":  "Primary button",
+        "no":  "Primærknapp"
+    },
+    {
+        "key":  "admin.hero_cta2",
+        "en":  "Secondary button",
+        "no":  "Sekundærknapp"
+    },
+    {
+        "key":  "admin.hero_icon",
+        "en":  "Hero icon (fa-*)",
+        "no":  "Hero-ikon (fa-*)"
+    },
+    {
+        "key":  "admin.hero_settings",
+        "en":  "Hero block",
+        "no":  "Hero-blokk"
+    },
+    {
+        "key":  "admin.hero_visual_label",
+        "en":  "Hero label",
+        "no":  "Hero-etikett"
+    },
+    {
+        "key":  "admin.hero_visual_sub",
+        "en":  "Hero subtitle",
+        "no":  "Hero-undertittel"
+    },
+    {
+        "key":  "admin.hours",
+        "en":  "Opening hours",
+        "no":  "Åpningstider"
+    },
+    {
+        "key":  "admin.image_picker_drop",
+        "en":  "Drop image here or click to choose file",
+        "no":  "Slipp bilde her eller klikk for å velge fil"
+    },
+    {
+        "key":  "admin.image_picker_drop_hint",
+        "en":  "JPEG, PNG, WebP · max 8 MB · or paste URL below",
+        "no":  "JPEG, PNG, WebP · maks 8 MB · eller lim inn URL nedenfor"
+    },
+    {
+        "key":  "admin.image_picker_label",
+        "en":  "Image",
+        "no":  "Bilde"
+    },
+    {
+        "key":  "admin.image_picker_upload_error",
+        "en":  "Upload failed.",
+        "no":  "Opplasting mislyktes."
+    },
+    {
+        "key":  "admin.image_picker_upload_ok",
+        "en":  "Image set.",
+        "no":  "Bilde satt."
+    },
+    {
+        "key":  "admin.image_picker_uploading",
+        "en":  "Uploading and optimizing…",
+        "no":  "Laster opp og optimaliserer…"
+    },
+    {
+        "key":  "admin.invoice",
+        "en":  "Invoice",
+        "no":  "Faktura"
+    },
+    {
+        "key":  "admin.invoice_amount",
+        "en":  "Amount",
+        "no":  "Beløp"
+    },
+    {
+        "key":  "admin.invoice_buyer",
+        "en":  "Buyer",
+        "no":  "Kjøper"
+    },
+    {
+        "key":  "admin.invoice_from_lead",
+        "en":  "From lead (optional)",
+        "no":  "Fra henvendelse (valgfritt)"
+    },
+    {
+        "key":  "admin.invoice_manual",
+        "en":  "Manual entry",
+        "no":  "Manuell registrering"
+    },
+    {
+        "key":  "admin.invoice_no",
+        "en":  "Number",
+        "no":  "Nummer"
+    },
+    {
+        "key":  "admin.invoice_not_found",
+        "en":  "Invoice not found.",
+        "no":  "Faktura ikke funnet."
+    },
+    {
+        "key":  "admin.invoice_price",
+        "en":  "Price",
+        "no":  "Pris"
+    },
+    {
+        "key":  "admin.invoice_price_hint",
+        "en":  "Leave empty to use price from services list",
+        "no":  "La stå tom for pris fra tjenestelisten"
+    },
+    {
+        "key":  "admin.invoice_qty",
+        "en":  "Qty",
+        "no":  "Ant."
+    },
+    {
+        "key":  "admin.invoice_seller",
+        "en":  "Seller",
+        "no":  "Selger"
+    },
+    {
+        "key":  "admin.invoice_service_custom",
+        "en":  "Or type a custom service",
+        "no":  "Eller skriv inn egen tjeneste"
+    },
+    {
+        "key":  "admin.invoice_source",
+        "en":  "Source",
+        "no":  "Kilde"
+    },
+    {
+        "key":  "admin.invoice_source_student",
+        "en":  "Student",
+        "no":  "Elev"
+    },
+    {
+        "key":  "admin.invoice_total",
+        "en":  "Total",
+        "no":  "Sum"
+    },
+    {
+        "key":  "admin.js_ai_article_ok",
+        "en":  "Article generated",
+        "no":  "Artikkel generert"
+    },
+    {
+        "key":  "admin.js_brief_required",
+        "en":  "Enter a short description",
+        "no":  "Skriv inn kort beskrivelse"
+    },
+    {
+        "key":  "admin.js_error",
+        "en":  "Error",
+        "no":  "Feil"
+    },
+    {
+        "key":  "admin.label_answer",
+        "en":  "Answer",
+        "no":  "Svar"
+    },
+    {
+        "key":  "admin.label_author",
+        "en":  "Author",
+        "no":  "Forfatter"
+    },
+    {
+        "key":  "admin.label_badge",
+        "en":  "Badge",
+        "no":  "Merke"
+    },
+    {
+        "key":  "admin.label_caption",
+        "en":  "Caption",
+        "no":  "Bildetekst"
+    },
+    {
+        "key":  "admin.label_date",
+        "en":  "Date",
+        "no":  "Dato"
+    },
+    {
+        "key":  "admin.label_desc",
+        "en":  "Description",
+        "no":  "Beskrivelse"
+    },
+    {
+        "key":  "admin.label_icon",
+        "en":  "Icon",
+        "no":  "Ikon"
+    },
+    {
+        "key":  "admin.label_icon_fa",
+        "en":  "Icon (Font Awesome)",
+        "no":  "Ikon (Font Awesome)"
+    },
+    {
+        "key":  "admin.label_initials",
+        "en":  "Initials",
+        "no":  "Initialer"
+    },
+    {
+        "key":  "admin.label_label",
+        "en":  "Label",
+        "no":  "Etikett"
+    },
+    {
+        "key":  "admin.label_lead",
+        "en":  "Lead",
+        "no":  "Ingress"
+    },
+    {
+        "key":  "admin.label_logo_url",
+        "en":  "Logo URL",
+        "no":  "Logo-URL"
+    },
+    {
+        "key":  "admin.label_price",
+        "en":  "Price",
+        "no":  "Pris"
+    },
+    {
+        "key":  "admin.label_rating",
+        "en":  "Rating (1–5)",
+        "no":  "Vurdering (1–5)"
+    },
+    {
+        "key":  "admin.label_review",
+        "en":  "Review",
+        "no":  "Anmeldelse"
+    },
+    {
+        "key":  "admin.label_role",
+        "en":  "Role",
+        "no":  "Rolle"
+    },
+    {
+        "key":  "admin.label_stat_label",
+        "en":  "Label",
+        "no":  "Etikett"
+    },
+    {
+        "key":  "admin.label_text",
+        "en":  "Text",
+        "no":  "Tekst"
+    },
+    {
+        "key":  "admin.label_title",
+        "en":  "Title",
+        "no":  "Tittel"
+    },
+    {
+        "key":  "admin.label_url_new",
+        "en":  "URL (new)",
+        "no":  "URL (ny)"
+    },
+    {
+        "key":  "admin.label_value",
+        "en":  "Value",
+        "no":  "Verdi"
+    },
+    {
+        "key":  "admin.label_years",
+        "en":  "Years of experience",
+        "no":  "Års erfaring"
+    },
+    {
+        "key":  "admin.lead_date",
+        "en":  "Date",
+        "no":  "Dato"
+    },
+    {
+        "key":  "admin.lead_email",
+        "en":  "Email",
+        "no":  "E-post"
+    },
+    {
+        "key":  "admin.lead_phone",
+        "en":  "Phone",
+        "no":  "Telefon"
+    },
+    {
+        "key":  "admin.lead_status_invoiced",
+        "en":  "Invoiced",
+        "no":  "Fakturert"
+    },
+    {
+        "key":  "admin.lead_status_new",
+        "en":  "New",
+        "no":  "Ny"
+    },
+    {
+        "key":  "admin.lead_status_other",
+        "en":  "Other",
+        "no":  "Annet"
+    },
+    {
+        "key":  "admin.leads_email_label",
+        "en":  "Notification email",
+        "no":  "Varsel-e-post"
+    },
+    {
+        "key":  "admin.leads_notify_enable",
+        "en":  "Send email when a new training / service request arrives",
+        "no":  "Send e-post ved ny opplærings- / tjenestehenvendelse"
+    },
+    {
+        "key":  "admin.map_title",
+        "en":  "Map title",
+        "no":  "Karttittel"
+    },
+    {
+        "key":  "admin.menu_btn",
+        "en":  "Menu",
+        "no":  "Meny"
+    },
+    {
+        "key":  "admin.news",
+        "en":  "News",
+        "no":  "Nyheter"
+    },
+    {
+        "key":  "admin.news_ai_brief",
+        "en":  "Brief",
+        "no":  "Kort beskrivelse"
+    },
+    {
+        "key":  "admin.news_ai_placeholder",
+        "en":  "E.g. New intensive B course starts July 1, limited seats…",
+        "no":  "F.eks. Nytt intensivkurs klasse B starter 1. juli, begrenset antall plasser…"
+    },
+    {
+        "key":  "admin.news_ai_title",
+        "en":  "AI writing assistant",
+        "no":  "AI-skriveassistent"
+    },
+    {
+        "key":  "admin.news_body",
+        "en":  "Body",
+        "no":  "Brødtekst"
+    },
+    {
+        "key":  "admin.news_deleted",
+        "en":  "Article deleted.",
+        "no":  "Artikkel slettet."
+    },
+    {
+        "key":  "admin.news_draft",
+        "en":  "Draft",
+        "no":  "Utkast"
+    },
+    {
+        "key":  "admin.news_excerpt",
+        "en":  "Excerpt",
+        "no":  "Utdrag"
+    },
+    {
+        "key":  "admin.news_image",
+        "en":  "Image URL",
+        "no":  "Bilde-URL"
+    },
+    {
+        "key":  "admin.news_images_drag",
+        "en":  "Drag to reorder",
+        "no":  "Dra for å endre rekkefølge"
+    },
+    {
+        "key":  "admin.news_images_drop",
+        "en":  "Drop images here or click to upload",
+        "no":  "Slipp bilder her eller klikk for å laste opp"
+    },
+    {
+        "key":  "admin.news_images_drop_hint",
+        "en":  "JPEG, PNG, WebP · max 8 MB · select several · drag thumbnails to reorder",
+        "no":  "JPEG, PNG, WebP · maks 8 MB · velg flere · dra miniatyrbilder for å endre rekkefølge"
+    },
+    {
+        "key":  "admin.news_images_label",
+        "en":  "Images (cover + gallery)",
+        "no":  "Bilder (forside + galleri)"
+    },
+    {
+        "key":  "admin.news_images_upload_error",
+        "en":  "Upload failed.",
+        "no":  "Opplasting mislyktes."
+    },
+    {
+        "key":  "admin.news_images_upload_ok",
+        "en":  "Images added.",
+        "no":  "Bilder lagt til."
+    },
+    {
+        "key":  "admin.news_images_uploading",
+        "en":  "Uploading and optimizing…",
+        "no":  "Laster opp og optimaliserer…"
+    },
+    {
+        "key":  "admin.news_list",
+        "en":  "School news",
+        "no":  "Skolens nyheter"
+    },
+    {
+        "key":  "admin.news_not_found",
+        "en":  "Article not found.",
+        "no":  "Artikkel ikke funnet."
+    },
+    {
+        "key":  "admin.news_published",
+        "en":  "Published",
+        "no":  "Publisert"
+    },
+    {
+        "key":  "admin.news_published_at",
+        "en":  "Publish date",
+        "no":  "Publiseringsdato"
+    },
+    {
+        "key":  "admin.news_saved",
+        "en":  "Article saved.",
+        "no":  "Artikkel lagret."
+    },
+    {
+        "key":  "admin.news_seo_score",
+        "en":  "SEO score",
+        "no":  "SEO-score"
+    },
+    {
+        "key":  "admin.news_slug",
+        "en":  "URL slug",
+        "no":  "URL-slug"
+    },
+    {
+        "key":  "admin.news_title",
+        "en":  "Title",
+        "no":  "Tittel"
+    },
+    {
+        "key":  "admin.notify_agent_analyzing",
+        "en":  "AI is analyzing SEO…",
+        "no":  "AI analyserer SEO…"
+    },
+    {
+        "key":  "admin.notify_agent_thinking",
+        "en":  "AI agent is thinking…",
+        "no":  "AI-agenten tenker…"
+    },
+    {
+        "key":  "admin.notify_agent_writing",
+        "en":  "AI is writing…",
+        "no":  "AI skriver…"
+    },
+    {
+        "key":  "admin.notify_design_applied",
+        "en":  "Design style applied.",
+        "no":  "Designstil brukt."
+    },
+    {
+        "key":  "admin.notify_error",
+        "en":  "Something went wrong.",
+        "no":  "Noe gikk galt."
+    },
+    {
+        "key":  "admin.notify_invoice_ok",
+        "en":  "Invoice created.",
+        "no":  "Faktura opprettet."
+    },
+    {
+        "key":  "admin.pages_draft",
+        "en":  "Draft",
+        "no":  "Utkast"
+    },
+    {
+        "key":  "admin.pages_slug",
+        "en":  "URL slug",
+        "no":  "URL-slug"
+    },
+    {
+        "key":  "admin.pages_sort_order",
+        "en":  "Sort order",
+        "no":  "Sortering"
+    },
+    {
+        "key":  "admin.phone",
+        "en":  "Phone",
+        "no":  "Telefon"
+    },
+    {
+        "key":  "admin.placeholder_why_choose",
+        "en":  "Why choose us",
+        "no":  "Hvorfor velge oss"
+    },
+    {
+        "key":  "admin.preset_active",
+        "en":  "Active",
+        "no":  "Aktiv"
+    },
+    {
+        "key":  "admin.preset_applied",
+        "en":  "Preset applied",
+        "no":  "Mal brukt"
+    },
+    {
+        "key":  "admin.recaptcha_enable",
+        "en":  "reCAPTCHA on form",
+        "no":  "reCAPTCHA på skjema"
+    },
+    {
+        "key":  "admin.recaptcha_help",
+        "en":  "Google reCAPTCHA v2 keys.",
+        "no":  "Google reCAPTCHA v2-nøkler."
+    },
+    {
+        "key":  "admin.recaptcha_secret_key_label",
+        "en":  "Secret key (private)",
+        "no":  "Secret key (privat)"
+    },
+    {
+        "key":  "admin.recaptcha_site_key_label",
+        "en":  "Site key (public)",
+        "no":  "Site key (offentlig)"
+    },
+    {
+        "key":  "admin.section_titles",
+        "en":  "Section titles",
+        "no":  "Seksjonstitler"
+    },
+    {
+        "key":  "admin.seo",
+        "en":  "SEO / Marketing",
+        "no":  "SEO / Markedsføring"
+    },
+    {
+        "key":  "admin.seo_ai_help",
+        "en":  "Score title, description, keywords for Google.",
+        "no":  "Vurder title, description og keywords for Google."
+    },
+    {
+        "key":  "admin.seo_check_item_city_local",
+        "en":  "City in title or description (local SEO)",
+        "no":  "By i title eller description (lokal SEO)"
+    },
+    {
+        "key":  "admin.seo_check_item_email",
+        "en":  "Email address (Schema + trust)",
+        "no":  "E-postadresse (Schema + tillit)"
+    },
+    {
+        "key":  "admin.seo_check_item_faq",
+        "en":  "FAQ block — 3+ questions (FAQPage schema)",
+        "no":  "FAQ-blokk — 3+ spørsmål (FAQPage schema)"
+    },
+    {
+        "key":  "admin.seo_check_item_hero_cta",
+        "en":  "Hero CTA button — all languages",
+        "no":  "Hero CTA-knapp — alle språk"
+    },
+    {
+        "key":  "admin.seo_check_item_hreflang",
+        "en":  "Full meta per language (title + description + keywords)",
+        "no":  "Full meta per språk (title + description + keywords)"
+    },
+    {
+        "key":  "admin.seo_check_item_location",
+        "en":  "Google Maps embed or street address",
+        "no":  "Google Maps embed eller gateadresse"
+    },
+    {
+        "key":  "admin.seo_check_item_maps_link",
+        "en":  "Google Maps profile link (sameAs)",
+        "no":  "Google Maps-profillenke (sameAs)"
+    },
+    {
+        "key":  "admin.seo_check_item_news",
+        "en":  "At least one published news article (freshness)",
+        "no":  "Minst én publisert nyhetsartikkel (ferskhet)"
+    },
+    {
+        "key":  "admin.seo_check_item_phone",
+        "en":  "Phone number (Schema LocalBusiness)",
+        "no":  "Telefonnummer (Schema LocalBusiness)"
+    },
+    {
+        "key":  "admin.seo_check_item_services",
+        "en":  "At least one service with price (OfferCatalog)",
+        "no":  "Minst én tjeneste med pris (OfferCatalog)"
+    },
+    {
+        "key":  "admin.seo_check_item_share_image",
+        "en":  "Share image (OG URL or hero image)",
+        "no":  "Delingsbilde (OG URL eller hero-bilde)"
+    },
+    {
+        "key":  "admin.seo_check_item_tagline",
+        "en":  "Business tagline — all languages (H1 subtitle)",
+        "no":  "Bedriftens slagord — alle språk (H1-undertittel)"
+    },
+    {
+        "key":  "admin.seo_check_item_testimonials",
+        "en":  "At least one Google review / testimonial",
+        "no":  "Minst én Google-anmeldelse / testimonial"
+    },
+    {
+        "key":  "admin.seo_check_missing_city_langs",
+        "en":  "City not mentioned in title/description for: {langs}",
+        "no":  "By ikke nevnt i title/description for: {langs}"
+    },
+    {
+        "key":  "admin.seo_check_missing_desc_langs",
+        "en":  "Description empty for: {langs}",
+        "no":  "Description tom for: {langs}"
+    },
+    {
+        "key":  "admin.seo_check_missing_desc_long",
+        "en":  "Description too long (\u003e165 chars) for: {langs}",
+        "no":  "Description for lang (\u003e165 tegn) for: {langs}"
+    },
+    {
+        "key":  "admin.seo_check_missing_desc_short",
+        "en":  "Description too short (\u003c120 chars) for: {langs}",
+        "no":  "Description for kort (\u003c120 tegn) for: {langs}"
+    },
+    {
+        "key":  "admin.seo_check_missing_hero_cta",
+        "en":  "Hero CTA empty for: {langs}",
+        "no":  "Hero CTA tom for: {langs}"
+    },
+    {
+        "key":  "admin.seo_check_missing_hero_image",
+        "en":  "Or upload hero image in Blocks",
+        "no":  "Eller last opp hero-bilde i Blokker"
+    },
+    {
+        "key":  "admin.seo_check_missing_hreflang",
+        "en":  "Incomplete meta (title/desc/keywords) for: {langs}",
+        "no":  "Ufullstendig meta (title/desc/keywords) for: {langs}"
+    },
+    {
+        "key":  "admin.seo_check_missing_keywords_langs",
+        "en":  "Keywords empty for: {langs}",
+        "no":  "Keywords tomme for: {langs}"
+    },
+    {
+        "key":  "admin.seo_check_missing_news",
+        "en":  "Publish at least one news article",
+        "no":  "Publiser minst én nyhetsartikkel"
+    },
+    {
+        "key":  "admin.seo_check_missing_og",
+        "en":  "Set OG Image URL on SEO page",
+        "no":  "Sett OG Image URL på SEO-siden"
+    },
+    {
+        "key":  "admin.seo_check_missing_tagline_langs",
+        "en":  "Tagline empty for: {langs}",
+        "no":  "Slagord tomt for: {langs}"
+    },
+    {
+        "key":  "admin.seo_check_missing_title_langs",
+        "en":  "Title empty for: {langs}",
+        "no":  "Title tom for: {langs}"
+    },
+    {
+        "key":  "admin.seo_check_missing_title_long",
+        "en":  "Title too long (\u003e65 chars) for: {langs}",
+        "no":  "Title for lang (\u003e65 tegn) for: {langs}"
+    },
+    {
+        "key":  "admin.seo_check_missing_title_short",
+        "en":  "Title too short (\u003c30 chars) for: {langs}",
+        "no":  "Title for kort (\u003c30 tegn) for: {langs}"
+    },
+    {
+        "key":  "admin.seo_checklist_all_done",
+        "en":  "100% Google SEO ready — meta, local and schema are complete!",
+        "no":  "100 % Google SEO klar — meta, lokal og schema er komplett!"
+    },
+    {
+        "key":  "admin.seo_checklist_go_blocks",
+        "en":  "Hero image",
+        "no":  "Hero-bilde"
+    },
+    {
+        "key":  "admin.seo_checklist_title",
+        "en":  "Google SEO checklist (100%)",
+        "no":  "Google SEO-sjekkliste (100 %)"
+    },
+    {
+        "key":  "admin.seo_health_analyze",
+        "en":  "AI analysis",
+        "no":  "AI-analyse"
+    },
+    {
+        "key":  "admin.seo_health_avg",
+        "en":  "Average score",
+        "no":  "Gjennomsnittlig score"
+    },
+    {
+        "key":  "admin.seo_health_fix",
+        "en":  "Improve SEO",
+        "no":  "Forbedre SEO"
+    },
+    {
+        "key":  "admin.seo_health_intro",
+        "en":  "Landing SEO score by language — fix yellow and red items for better Google visibility.",
+        "no":  "Landing SEO-score per språk — fiks gule og røde punkter for bedre Google-synlighet."
+    },
+    {
+        "key":  "admin.seo_health_lang",
+        "en":  "By language",
+        "no":  "Per språk"
+    },
+    {
+        "key":  "admin.seo_health_tips_title",
+        "en":  "What to improve",
+        "no":  "Hva som kan forbedres"
+    },
+    {
+        "key":  "admin.seo_health_title",
+        "en":  "SEO health",
+        "no":  "SEO-helse"
+    },
+    {
+        "key":  "admin.seo_help",
+        "en":  "Title, Description, Keywords for Google. Open Graph and Schema.org are automatic.",
+        "no":  "Title, Description, Keywords for Google. Open Graph og Schema.org er automatisk."
+    },
+    {
+        "key":  "admin.seo_og_image_hint",
+        "en":  "Preview when sharing link in messengers and social — upload or paste URL.",
+        "no":  "Forhåndsvisning ved deling i meldingsapper og sosiale medier — last opp eller lim inn URL."
+    },
+    {
+        "key":  "admin.seo_og_image_pick",
+        "en":  "Share image (OG)",
+        "no":  "Delingsbilde (OG)"
+    },
+    {
+        "key":  "admin.seo_suggestions",
+        "en":  "AI suggestions",
+        "no":  "AI-forslag"
+    },
+    {
+        "key":  "admin.seo_tip_desc_len",
+        "en":  "Description: 140–160 characters, one benefit + call to action.",
+        "no":  "Description: 140–160 tegn, én fordel + oppfordring til handling."
+    },
+    {
+        "key":  "admin.seo_tip_keywords",
+        "en":  "Keywords: 5–10 natural phrases — no stuffing or repetition.",
+        "no":  "Keywords: 5–10 naturlige fraser — ingen stuffing eller repetisjon."
+    },
+    {
+        "key":  "admin.seo_tip_local",
+        "en":  "Mention city and country in title/description for local search.",
+        "no":  "Nevn by og land i title/description for lokal søk."
+    },
+    {
+        "key":  "admin.seo_tip_mobile",
+        "en":  "Shorter sentences — most visitors read on phone.",
+        "no":  "Kortere setninger — de fleste leser på mobil."
+    },
+    {
+        "key":  "admin.seo_tip_title_len",
+        "en":  "Title: 50–60 characters, include city + main service.",
+        "no":  "Title: 50–60 tegn, inkluder by + hovedtjeneste."
+    },
+    {
+        "key":  "admin.seo_tips_intro",
+        "en":  "Practical rules — check before publishing.",
+        "no":  "Praktiske regler — sjekk før publisering."
+    },
+    {
+        "key":  "admin.seo_tips_title",
+        "en":  "SEO tips for Google",
+        "no":  "SEO-tips for Google"
+    },
+    {
+        "key":  "admin.set_active",
+        "en":  "Set active",
+        "no":  "Sett som aktiv"
+    },
+    {
+        "key":  "admin.stats",
+        "en":  "Statistics",
+        "no":  "Statistikk"
+    },
+    {
+        "key":  "admin.stats_active",
+        "en":  "Active template",
+        "no":  "Aktiv mal"
+    },
+    {
+        "key":  "admin.stats_news",
+        "en":  "Published news",
+        "no":  "Publiserte nyheter"
+    },
+    {
+        "key":  "admin.stats_revenue",
+        "en":  "Revenue (EUR)",
+        "no":  "Omsetning (NOK)"
+    },
+    {
+        "key":  "admin.stats_seo_avg",
+        "en":  "Avg SEO score",
+        "no":  "Gj.snitt SEO-score"
+    },
+    {
+        "key":  "admin.student_course",
+        "en":  "Course",
+        "no":  "Kurs"
+    },
+    {
+        "key":  "admin.student_last_invoice",
+        "en":  "Last invoice",
+        "no":  "Siste faktura"
+    },
+    {
+        "key":  "admin.student_monthly_hint",
+        "en":  "Monthly fee on invoice (1 mo)",
+        "no":  "Månedlig avgift på faktura (1 mnd)"
+    },
+    {
+        "key":  "admin.student_monthly_price",
+        "en":  "Price per month",
+        "no":  "Pris per måned"
+    },
+    {
+        "key":  "admin.student_phone",
+        "en":  "Phone",
+        "no":  "Telefon"
+    },
+    {
+        "key":  "admin.student_started",
+        "en":  "Start date",
+        "no":  "Startdato"
+    },
+    {
+        "key":  "admin.student_status_active",
+        "en":  "Active",
+        "no":  "Aktiv"
+    },
+    {
+        "key":  "admin.student_status_completed",
+        "en":  "Completed",
+        "no":  "Fullført"
+    },
+    {
+        "key":  "admin.student_status_paused",
+        "en":  "Paused",
+        "no":  "Pauset"
+    },
+    {
+        "key":  "admin.students",
+        "en":  "Students",
+        "no":  "Elever"
+    },
+    {
+        "key":  "admin.students_deleted",
+        "en":  "Student removed.",
+        "no":  "Elev fjernet."
+    },
+    {
+        "key":  "admin.students_empty",
+        "en":  "No students yet.",
+        "no":  "Ingen elever ennå."
+    },
+    {
+        "key":  "admin.students_help",
+        "en":  "Students with monthly fee — one click to create and print an invoice for the current month.",
+        "no":  "Elever med månedlig avgift — ett klikk for å opprette og skrive ut faktura for inneværende måned."
+    },
+    {
+        "key":  "admin.students_invoice_btn",
+        "en":  "Invoice",
+        "no":  "Faktura"
+    },
+    {
+        "key":  "admin.students_invoice_ok",
+        "en":  "Invoice created.",
+        "no":  "Faktura opprettet."
+    },
+    {
+        "key":  "admin.students_list",
+        "en":  "Students",
+        "no":  "Elever"
+    },
+    {
+        "key":  "admin.students_print_invoice",
+        "en":  "Print invoice",
+        "no":  "Skriv ut faktura"
+    },
+    {
+        "key":  "admin.students_saved",
+        "en":  "Student saved.",
+        "no":  "Elev lagret."
+    },
+    {
+        "key":  "admin.support_owner",
+        "en":  "Support \u0026 mail",
+        "no":  "Support og e-post"
+    },
+    {
+        "key":  "admin.support_page.ai_compose",
+        "en":  "Improve with AI",
+        "no":  "Forbedre med AI"
+    },
+    {
+        "key":  "admin.support_page.ai_compose_client",
+        "en":  "Draft with AI",
+        "no":  "Utkast med AI"
+    },
+    {
+        "key":  "admin.support_page.ai_error",
+        "en":  "AI compose failed.",
+        "no":  "AI-utkast mislyktes."
+    },
+    {
+        "key":  "admin.support_page.cat_billing",
+        "en":  "Billing / license",
+        "no":  "Fakturering / lisens"
+    },
+    {
+        "key":  "admin.support_page.cat_bug",
+        "en":  "Bug report",
+        "no":  "Feilrapport"
+    },
+    {
+        "key":  "admin.support_page.cat_feature",
+        "en":  "Feature request",
+        "no":  "Funksjonsforespørsel"
+    },
+    {
+        "key":  "admin.support_page.cat_other",
+        "en":  "Other",
+        "no":  "Annet"
+    },
+    {
+        "key":  "admin.support_page.category",
+        "en":  "Category",
+        "no":  "Kategori"
+    },
+    {
+        "key":  "admin.support_page.client_hint",
+        "en":  "AI drafts a polite email — copy or open mailto. Does not send automatically.",
+        "no":  "AI lager et høflig e-postutkast — kopier eller åpne mailto. Sender ikke automatisk."
+    },
+    {
+        "key":  "admin.support_page.client_name",
+        "en":  "Customer name",
+        "no":  "Kundens navn"
+    },
+    {
+        "key":  "admin.support_page.client_topic",
+        "en":  "Topic (booking, price, question…)",
+        "no":  "Emne (booking, pris, spørsmål…)"
+    },
+    {
+        "key":  "admin.support_page.copied",
+        "en":  "Copied to clipboard.",
+        "no":  "Kopiert til utklippstavle."
+    },
+    {
+        "key":  "admin.support_page.copy_draft",
+        "en":  "Copy text",
+        "no":  "Kopier tekst"
+    },
+    {
+        "key":  "admin.support_page.draft_notes",
+        "en":  "What do you want to say?",
+        "no":  "Hva vil du si?"
+    },
+    {
+        "key":  "admin.support_page.help",
+        "en":  "We are customer support — we help with Business Landing CMS setup, presets, SEO and integrations.",
+        "no":  "Vi er kundestøtte — hjelper med oppsett av Business Landing CMS, maler, SEO og integrasjoner."
+    },
+    {
+        "key":  "admin.support_page.inbox_attach",
+        "en":  "Screenshots",
+        "no":  "Skjermbilder"
+    },
+    {
+        "key":  "admin.support_page.inbox_attach_hint",
+        "en":  "PNG, JPG, GIF or WebP — up to 5 MB each.",
+        "no":  "PNG, JPG, GIF eller WebP — opptil 5 MB hver."
+    },
+    {
+        "key":  "admin.support_page.inbox_author_owner",
+        "en":  "BILOHASH support",
+        "no":  "BILOHASH-support"
+    },
+    {
+        "key":  "admin.support_page.inbox_author_you",
+        "en":  "You",
+        "no":  "Du"
+    },
+    {
+        "key":  "admin.support_page.inbox_back",
+        "en":  "Back to list",
+        "no":  "Tilbake til listen"
+    },
+    {
+        "key":  "admin.support_page.inbox_hint",
+        "en":  "Replies from BILOHASH support appear here. You can reply and attach screenshots.",
+        "no":  "Svar fra BILOHASH-support vises her. Du kan svare og legge ved skjermbilder."
+    },
+    {
+        "key":  "admin.support_page.inbox_reply",
+        "en":  "Your reply",
+        "no":  "Ditt svar"
+    },
+    {
+        "key":  "admin.support_page.inbox_send",
+        "en":  "Send reply",
+        "no":  "Send svar"
+    },
+    {
+        "key":  "admin.support_page.inbox_sent_ok",
+        "en":  "Reply sent.",
+        "no":  "Svar sendt."
+    },
+    {
+        "key":  "admin.support_page.inbox_unread",
+        "en":  "New reply",
+        "no":  "Nytt svar"
+    },
+    {
+        "key":  "admin.support_page.send_owner",
+        "en":  "Send message",
+        "no":  "Send melding"
+    },
+    {
+        "key":  "admin.support_page.subject",
+        "en":  "Subject",
+        "no":  "Emne"
+    },
+    {
+        "key":  "admin.support_page.tab_client",
+        "en":  "Email to customer",
+        "no":  "E-post til kunde"
+    },
+    {
+        "key":  "admin.support_page.tab_inbox",
+        "en":  "Conversations",
+        "no":  "Samtaler"
+    },
+    {
+        "key":  "admin.support_page.title",
+        "en":  "Support \u0026 mail",
+        "no":  "Support og e-post"
+    },
+    {
+        "key":  "admin.support_page.your_email",
+        "en":  "Your reply email",
+        "no":  "Din e-post for svar"
+    },
+    {
+        "key":  "admin.support_page.your_email_hint",
+        "en":  "Optional — so we can reply to you directly.",
+        "no":  "Valgfritt — slik at vi kan svare deg direkte."
+    },
+    {
+        "key":  "admin.tagline",
+        "en":  "Tagline",
+        "no":  "Slagord"
+    },
+    {
+        "key":  "admin.tasks_done_summary",
+        "en":  "Completed tasks ({n})",
+        "no":  "Fullførte oppgaver ({n})"
+    },
+    {
+        "key":  "admin.tasks_go_blocks",
+        "en":  "Hero image",
+        "no":  "Hero-bilde"
+    },
+    {
+        "key":  "admin.tasks_group_setup",
+        "en":  "Setup \u0026 security",
+        "no":  "Oppsett og sikkerhet"
+    },
+    {
+        "key":  "admin.tasks_item_ai_chat",
+        "en":  "AI chat widget enabled on landing",
+        "no":  "AI-chatwidget aktivert på landing"
+    },
+    {
+        "key":  "admin.tasks_item_recaptcha",
+        "en":  "reCAPTCHA on contact form",
+        "no":  "reCAPTCHA på kontaktskjema"
+    },
+    {
+        "key":  "admin.tasks_item_visual",
+        "en":  "Hero or OG image for sharing",
+        "no":  "Hero- eller OG-bilde for deling"
+    },
+    {
+        "key":  "admin.tasks_missing_og_image",
+        "en":  "Or set OG Image URL on SEO page",
+        "no":  "Eller sett OG Image URL på SEO-siden"
+    },
+    {
+        "key":  "admin.tasks_title",
+        "en":  "Launch task checklist",
+        "no":  "Lanseringsoppgaveliste"
+    },
+    {
+        "key":  "admin.template_active",
+        "en":  "Active",
+        "no":  "Aktiv"
+    },
+    {
+        "key":  "admin.template_recommended",
+        "en":  "Recommended",
+        "no":  "Anbefalt"
+    },
+    {
+        "key":  "admin.view_site",
+        "en":  "View site",
+        "no":  "Se nettsted"
+    },
+    {
+        "key":  "admin_showcase_eyebrow",
+        "en":  "Live admin panel",
+        "no":  "Live adminpanel"
+    },
+    {
+        "key":  "final_note",
+        "en":  "Free demo · no signup · demo / bilolending2026",
+        "no":  "Gratis demo · ingen registrering · demo / bilolending2026"
+    },
+    {
+        "key":  "home.sticky_cta",
+        "en":  "View admin panel",
+        "no":  "Se adminpanel"
+    },
+    {
+        "key":  "label",
+        "en":  "% responsive",
+        "no":  "% responsiv"
+    },
+    {
+        "key":  "landing.eur",
+        "en":  "€",
+        "no":  "kr"
+    },
+    {
+        "key":  "landing.form_email",
+        "en":  "Email",
+        "no":  "E-post"
+    },
+    {
+        "key":  "landing.form_phone",
+        "en":  "Phone",
+        "no":  "Telefon"
+    },
+    {
+        "key":  "landing.gallery_title",
+        "en":  "Gallery",
+        "no":  "Galleri"
+    },
+    {
+        "key":  "landing.team_title",
+        "en":  "Our team",
+        "no":  "Vårt team"
+    },
+    {
+        "key":  "landing.trust_rating",
+        "en":  "4.9 ★ on Google Maps",
+        "no":  "4.9 ★ på Google Maps"
+    },
+    {
+        "key":  "nav.contact",
+        "en":  "Contact",
+        "no":  "Kontakt"
+    },
+    {
+        "key":  "nav.lang_menu",
+        "en":  "Language",
+        "no":  "Språk"
+    },
+    {
+        "key":  "nav.menu",
+        "en":  "Menu",
+        "no":  "Meny"
+    },
+    {
+        "key":  "nav.pricing",
+        "en":  "Pricing",
+        "no":  "Priser"
+    },
+    {
+        "key":  "title",
+        "en":  "Go live",
+        "no":  "Gå live"
+    }
+]

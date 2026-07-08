@@ -1,5 +1,15 @@
 # Business Landing CMS — Changelog
 
+## 1.6.4 — 2026-07-08
+
+**Deploy:** Hostinger → https://bilohash.com/lending/
+
+- **Country SEO:** each language mapped to its country (NO→Oslo, SV→Stockholm, PL→Warsaw, EN→London, LT→Vilnius, UA→Kyiv, RU→Moscow)
+- **SEO meta:** title, description, keywords per country in native language
+- **Schema.org:** LocalBusiness address/geo/phone/currency per active language
+- **Presets & AI fill:** country-aware SEO generation for all business presets
+- **Migration:** `driving_premium_v` 4 — merges country-specific defaults
+
 ## 1.6.3 — 2026-07-08
 
 **Deploy:** Hostinger → https://bilohash.com/lending/

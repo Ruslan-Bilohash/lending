@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/i18n.php';
+require_once __DIR__ . '/includes/lang-country.php';
 require_once __DIR__ . '/includes/helpers.php';
 require_once __DIR__ . '/includes/admin-auth.php';
 require_once __DIR__ . '/includes/storage.php';

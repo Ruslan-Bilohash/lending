@@ -62,7 +62,7 @@ function ld_render_seo_head(array $vars, string $lang): void
         'uk' => 'uk_UA',
         'ru' => 'ru_RU',
         'lt' => 'lt_LT',
-        default => 'en_US',
+        default => 'en_GB',
     };
 
     if (($vars['keywords'] ?? '') !== ''): ?>
@@ -81,12 +81,18 @@ function ld_render_seo_head(array $vars, string $lang): void
             'site_name' => $vars['site_name'],
             'type' => 'website',
             'locale' => $ogLocale,
-            'locale_alternates' => array_values(array_filter([
-                $lang !== 'en' ? 'en_US' : null,
-                $lang !== 'lt' ? 'lt_LT' : null,
-                $lang !== 'uk' ? 'uk_UA' : null,
-                $lang !== 'ru' ? 'ru_RU' : null,
-            ])),
+            'locale_alternates' => array_values(array_filter(array_map(
+                static fn(string $code): ?string => $code === $lang ? null : match ($code) {
+                    'no' => 'nb_NO',
+                    'sv' => 'sv_SE',
+                    'pl' => 'pl_PL',
+                    'uk' => 'uk_UA',
+                    'ru' => 'ru_RU',
+                    'lt' => 'lt_LT',
+                    default => 'en_GB',
+                },
+                array_keys(ld_langs())
+            ))),
             'image_alt' => $vars['title'],
         ]);
     }
@@ -103,11 +109,16 @@ function ld_render_schema(string $lang): void
     $google = ld_google();
     $services = ld_services($lang);
     $faq = ld_faq($lang);
+    $country = ld_lang_country($lang);
     $name = ld_pick($business['name'], $lang);
     $address = ld_pick($business['address'], $lang);
     $city = ld_pick($business['city'], $lang);
     $tagline = ld_pick($business['tagline'], $lang);
     $seoDesc = ld_pick(ld_seo()['description'] ?? [], $lang) ?: $tagline;
+    $phone = trim((string) ($country['phone'] ?? ''));
+    if ($phone === '') {
+        $phone = trim((string) ($business['phone'] ?? ''));
+    }
     global $site_url;
 
     $pageUrl = rtrim((string) $site_url, '/') . '/template.php?t=' . ld_active_template();
@@ -128,29 +139,29 @@ function ld_render_schema(string $lang): void
         'name' => $name,
         'description' => $seoDesc,
         'url' => $pageUrl,
-        'telephone' => $business['phone'] ?? '',
+        'telephone' => $phone,
         'email' => $business['email'] ?? '',
         'image' => $ogImage !== '' ? [$ogImage] : [],
         'address' => [
             '@type' => 'PostalAddress',
             'streetAddress' => $address,
-            'addressLocality' => 'Vilnius',
-            'addressCountry' => 'LT',
+            'addressLocality' => (string) ($country['city'] ?? $city),
+            'addressCountry' => (string) ($country['country_code'] ?? 'NO'),
         ],
         'geo' => [
             '@type' => 'GeoCoordinates',
-            'latitude' => 54.6997,
-            'longitude' => 25.2797,
+            'latitude' => (float) ($country['lat'] ?? 59.9139),
+            'longitude' => (float) ($country['lng'] ?? 10.7522),
         ],
         'areaServed' => [
             '@type' => 'City',
-            'name' => 'Vilnius',
+            'name' => (string) ($country['city'] ?? $city),
         ],
         'openingHoursSpecification' => [
             ['@type' => 'OpeningHoursSpecification', 'dayOfWeek' => ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], 'opens' => '09:00', 'closes' => '19:00'],
             ['@type' => 'OpeningHoursSpecification', 'dayOfWeek' => 'Saturday', 'opens' => '10:00', 'closes' => '15:00'],
         ],
-        'priceRange' => '€€',
+        'priceRange' => (string) ($country['price_range'] ?? '€€'),
         'sameAs' => array_values(array_filter([
             trim((string) ($google['reviews_url'] ?? '')),
             trim((string) ($google['maps_link'] ?? '')),
@@ -181,7 +192,7 @@ function ld_render_schema(string $lang): void
                 ];
                 if (($s['price'] ?? '') !== '') {
                     $offer['price'] = preg_replace('/\s+/', '', (string) $s['price']);
-                    $offer['priceCurrency'] = ld_currency() === '€' ? 'EUR' : ld_currency();
+                    $offer['priceCurrency'] = (string) ($country['currency_iso'] ?? 'EUR');
                 }
                 return $offer;
             }, array_slice($services, 0, 8)),

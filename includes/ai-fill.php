@@ -50,7 +50,7 @@ Return ONLY valid JSON (no markdown) matching this exact structure:
   "active_template": 5,
   "business_preset": "dentist"
 }
-Rules: realistic local business data; SEO keywords optimized for Google; 3-4 services, 3-4 team, 4 faq, 3 reviews, 4 stats; LT/UK/RU/EN translations; prices as strings without currency symbol; badge null or short string per language object.
+Rules: realistic local business data; SEO keywords optimized for Google per country; 3-4 services, 3-4 team, 4 faq, 3 reviews, 4 stats; ALL 7 languages NO/SV/PL/EN/LT/UA/RU — each language targets its country (NO→Norway/Oslo, SV→Sweden/Stockholm, PL→Poland/Warsaw, EN→UK/London, LT→Lithuania/Vilnius, UA→Ukraine/Kyiv, RU→Russia/Moscow); mention city+country in SEO title/description per language; prices as strings without currency symbol; badge null or short string per language object.
 Pick active_template 1-10 matching business vibe: dentist/medical=5 or 8, driving/auto=1 or 6, beauty=7, restaurant=2, fitness=3, law/corporate=10.
 Set business_preset to one of: dentist, driving_school, auto_service, beauty_salon, restaurant, fitness_gym, law_office, medical_clinic.
 PROMPT;
@@ -108,28 +108,39 @@ function ld_ai_fill_demo(string $brief): array
 {
     $name = mb_substr($brief, 0, 60);
     $i18n = static fn(string $lt, string $uk, string $en, ?string $ru = null) => ld_pi($lt, $uk, $en, $ru);
+    $bizName = [
+        'no' => $name, 'sv' => $name, 'pl' => $name, 'en' => $name, 'lt' => $name, 'uk' => $name, 'ru' => $name,
+    ];
 
     return [
         'business' => [
-            'name' => $i18n($name, $name, $name),
+            'name' => $bizName,
             'tagline' => $i18n('Profesionalios paslaugos jūsų mieste', 'Професійні послуги у вашому місті', 'Professional services in your city'),
-            'city' => $i18n('Vilnius, Lietuva', 'Вільнюс, Литва', 'Vilnius, Lithuania'),
-            'address' => $i18n('Gedimino pr. 1, Vilnius', 'пр. Гедиміно 1, Вільнюс', 'Gedimino av. 1, Vilnius'),
-            'hours' => $i18n('Pr–Pn 9:00–18:00', 'Пн–Пт 9:00–18:00', 'Mon–Fri 9:00–18:00'),
-            'phone' => '+370 600 00000',
+            'city' => ld_country_field('city_full'),
+            'address' => ld_country_field('address'),
+            'hours' => $i18n('Pr–Pn 9:00–18:00', 'Пн–Пт 9:00–18:00', 'Mon–Fri 9:00–18:00', 'Пн–Пт 9:00–18:00', 'Man–fre 9:00–18:00', 'Mån–fre 9:00–18:00', 'Pon–pt 9:00–18:00'),
+            'phone' => '+47 22 12 34 56',
             'email' => 'info@business.demo',
         ],
         'seo' => [
-            'title' => $i18n($name . ' — oficialus puslapis', $name . ' — офіційний сайт', $name . ' — official website'),
-            'description' => $i18n('Užsiregistruokite online. ' . $brief, 'Запишіться онлайн. ' . $brief, 'Register online. ' . $brief),
-            'keywords' => $i18n($name . ', paslaugos, Vilnius', $name . ', послуги, Вільнюс', $name . ', services, Vilnius'),
+            'title' => ld_preset_country_seo_titles($bizName),
+            'description' => ld_preset_country_seo_descriptions($bizName, [
+                'lt' => 'Užsiregistruokite online. ' . $brief,
+                'uk' => 'Запишіться онлайн. ' . $brief,
+                'en' => 'Register online. ' . $brief,
+                'ru' => 'Запишитесь онлайн. ' . $brief,
+                'no' => 'Bestill online. ' . $brief,
+                'sv' => 'Boka online. ' . $brief,
+                'pl' => 'Zarezerwuj online. ' . $brief,
+            ]),
+            'keywords' => ld_preset_country_seo_keywords($bizName),
         ],
         'hero' => [
             'cta' => $i18n('Susisiekti', 'Зв\'язатися', 'Contact'),
             'cta2' => $i18n('Paslaugos', 'Послуги', 'Services'),
             'visual_icon' => 'fa-store',
-            'visual_label' => $i18n($name, $name, $name),
-            'visual_sub' => $i18n('Vilnius', 'Вільнюс', 'Vilnius'),
+            'visual_label' => $bizName,
+            'visual_sub' => ld_country_field('city'),
         ],
         'sections' => [
             'services' => ['title' => $i18n('Paslaugos', 'Послуги', 'Services'), 'lead' => $i18n('Ką siūlome', 'Що пропонуємо', 'What we offer')],

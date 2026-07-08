@@ -121,7 +121,7 @@ function ld_admin_seo_langs_missing_city(array $seo, array $business): array
         $title = trim((string) ($seo['title'][$code] ?? ''));
         $desc = trim((string) ($seo['description'][$code] ?? ''));
         $blob = mb_strtolower($title . ' ' . $desc);
-        if (!str_contains($blob, mb_strtolower($city))) {
+        if (!ld_seo_contains_city($blob, $code, $business)) {
             $missing[] = (string) $label;
         }
     }

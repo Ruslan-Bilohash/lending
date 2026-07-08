@@ -96,54 +96,61 @@ function ld_reviews(string $lang): array
     return ld_localize_list($items, $lang, ['text']);
 }
 
-function ld_business_address_query(string $lang = 'en'): string
+function ld_business_address_query(?string $langCode = null): string
 {
+    global $lang;
+    $resolved = $langCode ?? $lang ?? 'no';
     $business = ld_business();
-    foreach ([$lang, 'en', 'ru', 'lt', 'uk'] as $code) {
+    foreach (array_unique([$resolved, 'no', 'en', 'lt', 'uk', 'sv', 'pl', 'ru']) as $code) {
         $address = ld_pick($business['address'] ?? [], $code);
         if ($address !== '') {
             return $address;
         }
     }
-    return '';
+    $country = ld_lang_country($resolved);
+    return (string) ($country['maps_query'] ?? '');
 }
 
 function ld_maps_embed_src(): string
 {
+    $query = ld_business_address_query();
+    if ($query !== '') {
+        return 'https://www.google.com/maps?q=' . rawurlencode($query) . '&output=embed';
+    }
     $google = ld_google();
     $embed = ld_extract_iframe_src((string) ($google['maps_embed'] ?? ''));
     if ($embed !== '' && ld_is_google_maps_embed($embed)) {
         return $embed;
     }
-    $query = ld_business_address_query('en');
-    if ($query === '') {
-        return '';
-    }
-    return 'https://www.google.com/maps?q=' . rawurlencode($query) . '&output=embed';
+    return '';
 }
 
 function ld_maps_link(): string
 {
+    $query = ld_business_address_query();
+    if ($query !== '') {
+        return 'https://www.google.com/maps/search/?api=1&query=' . rawurlencode($query);
+    }
     $google = ld_google();
     $link = trim((string) ($google['maps_link'] ?? ''));
     if ($link !== '' && filter_var($link, FILTER_VALIDATE_URL)) {
         return $link;
     }
-    $query = ld_business_address_query('en');
-    if ($query === '') {
-        return '';
-    }
-    return 'https://www.google.com/maps/search/?api=1&query=' . rawurlencode($query);
+    return '';
 }
 
 function ld_google_reviews_url(): string
 {
+    $link = ld_maps_link();
+    if ($link !== '') {
+        return $link;
+    }
     $google = ld_google();
     $url = trim((string) ($google['reviews_url'] ?? ''));
     if ($url !== '' && filter_var($url, FILTER_VALIDATE_URL)) {
         return $url;
     }
-    return ld_maps_link();
+    return '';
 }
 
 function ld_has_map(): bool

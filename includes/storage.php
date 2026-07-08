@@ -34,40 +34,24 @@ function ld_default_settings(): array
         'business' => [
             'name' => [
                 'no' => 'Oslo Trafikkskole',
-                'sv' => 'Oslo Trafikkskola',
-                'pl' => 'Szkoła Jazdy Oslo',
-                'lt' => 'Oslos Vairavimo Mokykla',
-                'uk' => 'Автошкола Осло',
-                'en' => 'Oslo Driving School',
-                'ru' => 'Автошкола Осло',
+                'sv' => 'Stockholm Trafikskola',
+                'pl' => 'Szkoła Jazdy Warszawa',
+                'lt' => 'Vilniaus Vairavimo Mokykla',
+                'uk' => 'Автошкола Київ',
+                'en' => 'London Driving School',
+                'ru' => 'Автошкола Москва',
             ],
             'tagline' => [
                 'no' => 'Klasse B · teori · intensivkurs — i Oslo siden 2012',
-                'sv' => 'Klass B · teori · intensivkurs — i Oslo sedan 2012',
-                'pl' => 'Kategoria B · teoria · kurs intensywny — w Oslo od 2012',
-                'lt' => 'B kategorija · teorija · intensyvus kursas — Oslė nuo 2012 m.',
-                'uk' => 'Категорія B · теорія · інтенсив — в Осло з 2012 року',
-                'en' => 'Category B · theory · intensive — in Oslo since 2012',
-                'ru' => 'Категория B · теория · интенсив — в Осло с 2012 года',
+                'sv' => 'Körkort B · teori · intensivkurs — i Stockholm sedan 2012',
+                'pl' => 'Kategoria B · teoria · kurs intensywny — w Warszawie od 2012',
+                'lt' => 'B kategorija · teorija · intensyvus kursas — Vilniuje nuo 2012 m.',
+                'uk' => 'Категорія B · теорія · інтенсив — у Києві з 2012 року',
+                'en' => 'Category B · theory · intensive — in London since 2012',
+                'ru' => 'Категория B · теория · интенсив — в Москве с 2012 года',
             ],
-            'city' => [
-                'no' => 'Oslo, Norge',
-                'sv' => 'Oslo, Norge',
-                'pl' => 'Oslo, Norwegia',
-                'lt' => 'Oslas, Norvegija',
-                'uk' => 'Осло, Норвегія',
-                'en' => 'Oslo, Norway',
-                'ru' => 'Осло, Норвегия',
-            ],
-            'address' => [
-                'no' => 'Karl Johans gate 15, 0154 Oslo',
-                'sv' => 'Karl Johans gate 15, 0154 Oslo',
-                'pl' => 'Karl Johans gate 15, 0154 Oslo',
-                'lt' => 'Karl Johans gate 15, 0154 Oslo',
-                'uk' => 'Karl Johans gate 15, 0154 Oslo',
-                'en' => 'Karl Johans gate 15, 0154 Oslo',
-                'ru' => 'Karl Johans gate 15, 0154 Oslo',
-            ],
+            'city' => ld_country_field('city_full'),
+            'address' => ld_country_field('address'),
             'phone' => '+47 22 12 34 56',
             'email' => 'info@oslo-driving.demo',
             'hours' => [
@@ -109,92 +93,92 @@ function ld_default_settings(): array
                 'en' => 'Category B',
                 'ru' => 'Категория B',
             ],
-            'visual_sub' => [
-                'no' => 'Oslo',
-                'sv' => 'Oslo',
-                'pl' => 'Oslo',
-                'lt' => 'Oslas',
-                'uk' => 'Осло',
-                'en' => 'Oslo',
-                'ru' => 'Осло',
-            ],
+            'visual_sub' => ld_country_field('city'),
         ],
         'sections' => [
             'services' => [
                 'title' => [
-                    'lt' => 'Mūsų paslaugos',
-                    'uk' => 'Наші послуги',
-                    'en' => 'Our services',
+                    'no' => 'Våre tjenester', 'sv' => 'Våra tjänster', 'pl' => 'Nasze usługi',
+                    'lt' => 'Mūsų paslaugos', 'uk' => 'Наші послуги', 'en' => 'Our services', 'ru' => 'Наши услуги',
                 ],
                 'lead' => [
-                    'lt' => 'B, BE, teorija ir intensyvūs kursai Vilniuje.',
-                    'uk' => 'B, BE, теорія та інтенсив у Вільнюсі.',
-                    'en' => 'B, BE, theory and intensive courses in Vilnius.',
+                    'no' => 'Klasse B, teori og intensivkurs i Oslo — forberedelse til Statens vegvesen.',
+                    'sv' => 'Körkort B, teori och intensivkurs i Stockholm — förberedelse för Transportstyrelsen.',
+                    'pl' => 'Kat. B, teoria i kurs intensywny w Warszawie — przygotowanie do WORD.',
+                    'lt' => 'B, BE, teorija ir intensyvūs kursai Vilniuje — Regitra pasiruošimas.',
+                    'uk' => 'B, BE, теорія та інтенсив у Києві — підготовка до іспиту МВС.',
+                    'en' => 'Category B, theory and intensive courses in London — DVSA exam prep.',
+                    'ru' => 'Категория B, теория и интенсив в Москве — подготовка к ГИБДД.',
                 ],
             ],
             'team' => [
                 'title' => [
-                    'lt' => 'Komanda',
-                    'uk' => 'Команда',
-                    'en' => 'Our team',
+                    'no' => 'Vårt team', 'sv' => 'Vårt team', 'pl' => 'Nasz zespół',
+                    'lt' => 'Komanda', 'uk' => 'Команда', 'en' => 'Our team', 'ru' => 'Команда',
                 ],
                 'lead' => [
-                    'lt' => 'Patyrę specialistai — lietuvių, ukrainiečių ir anglų kalbomis.',
-                    'uk' => 'Досвідчена команда — литовська, українська та англійська.',
-                    'en' => 'Experienced team — Lithuanian, Ukrainian and English.',
+                    'no' => 'Erfarne instruktører i Oslo — norsk, engelsk og flere språk.',
+                    'sv' => 'Erfarna instruktörer i Stockholm — svenska, engelska och fler språk.',
+                    'pl' => 'Doświadczeni instruktorzy w Warszawie — polski, angielski i więcej.',
+                    'lt' => 'Patyrę specialistai Vilniuje — lietuvių, ukrainiečių ir anglų kalbomis.',
+                    'uk' => 'Досвідчена команда в Києві — українська, англійська та інші мови.',
+                    'en' => 'Experienced instructors in London — English and multilingual support.',
+                    'ru' => 'Опытные инструкторы в Москве — русский, английский и другие языки.',
                 ],
             ],
             'faq' => [
                 'title' => [
-                    'lt' => 'Dažniausiai užduodami klausimai',
-                    'uk' => 'Часті питання',
-                    'en' => 'Frequently asked questions',
+                    'no' => 'Ofte stilte spørsmål', 'sv' => 'Vanliga frågor', 'pl' => 'Najczęstsze pytania',
+                    'lt' => 'Dažniausiai užduodami klausimai', 'uk' => 'Часті питання',
+                    'en' => 'Frequently asked questions', 'ru' => 'Частые вопросы',
                 ],
             ],
             'contact' => [
                 'title' => [
-                    'lt' => 'Kontaktai',
-                    'uk' => 'Контакт',
-                    'en' => 'Contact us',
+                    'no' => 'Kontakt oss', 'sv' => 'Kontakta oss', 'pl' => 'Kontakt',
+                    'lt' => 'Kontaktai', 'uk' => 'Контакт', 'en' => 'Contact us', 'ru' => 'Контакт',
                 ],
                 'lead' => [
-                    'lt' => 'Palikite telefoną — perskambinsime per 15 min. Registracija ir konsultacija nemokama.',
-                    'uk' => 'Залиште телефон — передзвонимо за 15 хв. Запис і консультація безкоштовні.',
-                    'ru' => 'Оставьте телефон — перезвоним за 15 мин. Запись и консультация бесплатны.',
-                    'en' => 'Leave your number — we call you back within 15 minutes. Enrollment advice is free.',
+                    'no' => 'Legg igjen telefon — vi ringer tilbake innen 15 min. Gratis rådgivning.',
+                    'sv' => 'Lämna telefon — vi ringer tillbaka inom 15 min. Gratis rådgivning.',
+                    'pl' => 'Zostaw telefon — oddzwonimy w 15 min. Bezpłatna konsultacja.',
+                    'lt' => 'Palikite telefoną — perskambinsime per 15 min. Registracija nemokama.',
+                    'uk' => 'Залиште телефон — передзвонимо за 15 хв. Консультація безкоштовна.',
+                    'ru' => 'Оставьте телефон — перезвоним за 15 мин. Консультация бесплатна.',
+                    'en' => 'Leave your number — we call back within 15 min. Free consultation.',
                 ],
             ],
             'reviews' => [
                 'title' => [
-                    'lt' => 'Google atsiliepimai',
-                    'uk' => 'Відгуки Google',
-                    'en' => 'Google reviews',
+                    'no' => 'Google-anmeldelser', 'sv' => 'Google-omdömen', 'pl' => 'Opinie Google',
+                    'lt' => 'Google atsiliepimai', 'uk' => 'Відгуки Google', 'en' => 'Google reviews', 'ru' => 'Отзывы Google',
                 ],
                 'lead' => [
-                    'lt' => 'Ką sako mūsų klientai Google žemėlapiuose.',
-                    'uk' => 'Що кажуть клієнти в Google Maps.',
-                    'en' => 'What our clients say on Google Maps.',
+                    'no' => 'Hva kundene sier om oss på Google Maps i Oslo.',
+                    'sv' => 'Vad kunderna säger om oss på Google Maps i Stockholm.',
+                    'pl' => 'Co klienci mówią o nas w Google Maps w Warszawie.',
+                    'lt' => 'Ką klientai sako apie mus Google Maps Vilniuje.',
+                    'uk' => 'Що клієнти кажуть про нас у Google Maps у Києві.',
+                    'en' => 'What clients say about us on Google Maps in London.',
+                    'ru' => 'Что клиенты говорят о нас в Google Maps в Москве.',
                 ],
             ],
             'map' => [
                 'title' => [
-                    'lt' => 'Kaip mus rasti',
-                    'uk' => 'Як нас знайти',
-                    'en' => 'Find us on the map',
+                    'no' => 'Finn oss', 'sv' => 'Hitta oss', 'pl' => 'Jak nas znaleźć',
+                    'lt' => 'Kaip mus rasti', 'uk' => 'Як нас знайти', 'en' => 'Find us on the map', 'ru' => 'Как нас найти',
                 ],
             ],
             'features' => [
                 'title' => [
-                    'lt' => 'Kodėl mes',
-                    'uk' => 'Чому ми',
-                    'en' => 'Why choose us',
+                    'no' => 'Hvorfor velge oss', 'sv' => 'Varför välja oss', 'pl' => 'Dlaczego my',
+                    'lt' => 'Kodėl mes', 'uk' => 'Чому ми', 'en' => 'Why choose us', 'ru' => 'Почему мы',
                 ],
             ],
             'gallery' => [
                 'title' => [
-                    'lt' => 'Galerija',
-                    'uk' => 'Галерея',
-                    'en' => 'Gallery',
+                    'no' => 'Galleri', 'sv' => 'Galleri', 'pl' => 'Galeria',
+                    'lt' => 'Galerija', 'uk' => 'Галерея', 'en' => 'Gallery', 'ru' => 'Галерея',
                 ],
             ],
         ],
@@ -207,13 +191,17 @@ function ld_default_settings(): array
         ],
         'reviews' => [
             [
-                'author' => 'Jonas Petraitis',
+                'author' => 'Erik N.',
                 'rating' => '5',
                 'date' => '2025-09',
                 'text' => [
-                    'lt' => 'Puiki mokykla — išlaikiau B kategoriją iš pirmo karto. Instruktorė Olena kalba ukrainiečių kalba.',
-                    'uk' => 'Чудова школа — склала категорію B з першого разу. Інструктор Олена говорить українською.',
-                    'en' => 'Great school — passed Category B first try. Instructor Olena speaks Ukrainian.',
+                    'no' => 'Beste trafikkskole i Oslo — besto oppkjøring på første forsøk!',
+                    'sv' => 'Bästa trafikskolan i Stockholm — klarade uppkörningen på första försöket!',
+                    'pl' => 'Najlepsza szkoła jazdy w Warszawie — zdałem egzamin za pierwszym razem!',
+                    'lt' => 'Puiki mokykla Vilniuje — išlaikiau B kategoriją iš pirmo karto.',
+                    'uk' => 'Чудова автошкола в Києві — склала категорію B з першого разу.',
+                    'en' => 'Great driving school in London — passed first time!',
+                    'ru' => 'Отличная автошкола в Москве — сдал с первого раза!',
                 ],
             ],
             [
@@ -221,9 +209,13 @@ function ld_default_settings(): array
                 'rating' => '5',
                 'date' => '2025-06',
                 'text' => [
-                    'lt' => 'Intensyvus kursas per 2 savaites — viskas aiškiai, be streso. Rekomenduoju!',
+                    'no' => 'Intensivkurs på 2 uker — alt tydelig, ingen stress. Anbefales!',
+                    'sv' => 'Intensivkurs på 2 veckor — tydligt och stressfritt. Rekommenderas!',
+                    'pl' => 'Kurs intensywny w 2 tygodnie — wszystko jasne, bez stresu. Polecam!',
+                    'lt' => 'Intensyvus kursas per 2 savaites — viskas aiškiai. Rekomenduoju!',
                     'uk' => 'Інтенсив за 2 тижні — усе зрозуміло, без стресу. Рекомендую!',
-                    'en' => 'Intensive course in 2 weeks — clear and stress-free. Highly recommend!',
+                    'en' => 'Intensive in 2 weeks — clear and stress-free. Highly recommend!',
+                    'ru' => 'Интенсив за 2 недели — всё понятно, без стресса. Рекомендую!',
                 ],
             ],
             [
@@ -231,62 +223,112 @@ function ld_default_settings(): array
                 'rating' => '5',
                 'date' => '2025-03',
                 'text' => [
-                    'lt' => 'Theory in English, practice in Vilnius — perfect for expats.',
-                    'uk' => 'Теорія англійською, практика у Вільнюсі — ідеально для expat.',
-                    'en' => 'Theory in English, practice in Vilnius — perfect for expats.',
+                    'no' => 'Teori på norsk, praksis i Oslo — perfekt for nyankomne.',
+                    'sv' => 'Teori på svenska, körning i Stockholm — perfekt för nyinflyttade.',
+                    'pl' => 'Teoria po polsku, jazdy w Warszawie — idealne dla nowych mieszkańców.',
+                    'lt' => 'Teorija lietuviškai, praktika Vilniuje — puiku expat.',
+                    'uk' => 'Теорія українською, практика в Києві — ідеально для новачків.',
+                    'en' => 'Theory in English, practice in London — perfect for expats.',
+                    'ru' => 'Теория на русском, практика в Москве — идеально для новичков.',
                 ],
             ],
         ],
         'stats' => [
-            ['value' => '4 200+', 'label' => ['lt' => 'Išlaikyti egzaminai', 'uk' => 'Складені іспити', 'en' => 'Exams passed']],
-            ['value' => '98%', 'label' => ['lt' => 'Pirmo bandymo teorija', 'uk' => 'Теорія з першого разу', 'en' => 'Theory first try']],
-            ['value' => '14', 'label' => ['lt' => 'Specialistų', 'uk' => 'Спеціалістів', 'en' => 'Team members']],
-            ['value' => '4.9', 'label' => ['lt' => 'Google įvertinimas', 'uk' => 'Рейтинг Google', 'en' => 'Google rating']],
+            ['value' => '4 200+', 'label' => [
+                'no' => 'Beståtte prøver', 'sv' => 'Godkända prov', 'pl' => 'Zdane egzaminy',
+                'lt' => 'Išlaikyti egzaminai', 'uk' => 'Складені іспити', 'en' => 'Exams passed', 'ru' => 'Сданные экзамены',
+            ]],
+            ['value' => '98%', 'label' => [
+                'no' => 'Teori første forsøk', 'sv' => 'Teori på första försöket', 'pl' => 'Teoria za pierwszym razem',
+                'lt' => 'Pirmo bandymo teorija', 'uk' => 'Теорія з першого разу', 'en' => 'Theory first try', 'ru' => 'Теория с первого раза',
+            ]],
+            ['value' => '14', 'label' => [
+                'no' => 'Instruktører', 'sv' => 'Instruktörer', 'pl' => 'Instruktorzy',
+                'lt' => 'Specialistų', 'uk' => 'Спеціалістів', 'en' => 'Team members', 'ru' => 'Специалистов',
+            ]],
+            ['value' => '4.9', 'label' => [
+                'no' => 'Google-vurdering', 'sv' => 'Google-betyg', 'pl' => 'Ocena Google',
+                'lt' => 'Google įvertinimas', 'uk' => 'Рейтинг Google', 'en' => 'Google rating', 'ru' => 'Рейтинг Google',
+            ]],
         ],
         'services' => [
             [
                 'icon' => 'fa-car-side',
-                'name' => ['lt' => 'B kategorija (automobilis)', 'uk' => 'Категорія B (автомобіль)', 'en' => 'Category B (car)'],
+                'name' => [
+                    'no' => 'Klasse B (personbil)', 'sv' => 'Körkort B (personbil)', 'pl' => 'Kat. B (samochód osobowy)',
+                    'lt' => 'B kategorija (automobilis)', 'uk' => 'Категорія B (автомобіль)', 'en' => 'Category B (car)', 'ru' => 'Категория B (легковой)',
+                ],
                 'desc' => [
-                    'lt' => '40 teorijos + 30 praktikos pamokų. Vakariniai ir savaitgalio grafikai.',
-                    'uk' => '40 теорії + 30 практики. Вечірні та вихідні групи.',
-                    'en' => '40 theory + 30 driving lessons. Evening and weekend groups.',
+                    'no' => '40 teori + 30 kjøretimer i Oslo. Forberedelse til Statens vegvesen.',
+                    'sv' => '40 teori + 30 körlektioner i Stockholm. Förberedelse för Transportstyrelsen.',
+                    'pl' => '40 godz. teorii + 30 jazd w Warszawie. Przygotowanie do WORD.',
+                    'lt' => '40 teorijos + 30 praktikos Vilniuje. Regitra pasiruošimas.',
+                    'uk' => '40 год. теорії + 30 практики в Києві. Підготовка до іспиту МВС.',
+                    'en' => '40 theory + 30 lessons in London. DVSA exam preparation.',
+                    'ru' => '40 ч. теории + 30 практики в Москве. Подготовка к ГИБДД.',
                 ],
                 'price' => '890',
-                'badge' => ['lt' => 'Populiariausias', 'uk' => 'Популярний', 'en' => 'Most popular'],
+                'badge' => [
+                    'no' => 'Mest populær', 'sv' => 'Mest populär', 'pl' => 'Najpopularniejszy',
+                    'lt' => 'Populiariausias', 'uk' => 'Популярний', 'en' => 'Most popular', 'ru' => 'Популярный',
+                ],
             ],
             [
                 'icon' => 'fa-trailer',
-                'name' => ['lt' => 'BE kategorija (priekaba)', 'uk' => 'Категорія BE (причіп)', 'en' => 'Category BE (trailer)'],
+                'name' => [
+                    'no' => 'Klasse BE (tilhenger)', 'sv' => 'Körkort BE (släp)', 'pl' => 'Kat. BE (przyczepa)',
+                    'lt' => 'BE kategorija (priekaba)', 'uk' => 'Категорія BE (причіп)', 'en' => 'Category BE (trailer)', 'ru' => 'Категория BE (прицеп)',
+                ],
                 'desc' => [
-                    'lt' => '5 dienų intensyvus kursas su B kategorijos baze.',
-                    'uk' => '5-денний інтенсив з базою категорії B.',
-                    'en' => '5-day intensive with Category B base.',
+                    'no' => '5-dagers intensivkurs med klasse B-grunnlag i Oslo.',
+                    'sv' => '5-dagars intensivkurs med B-behörighet i Stockholm.',
+                    'pl' => '5-dniowy kurs intensywny z kat. B w Warszawie.',
+                    'lt' => '5 dienų intensyvus kursas su B kategorijos baze Vilniuje.',
+                    'uk' => '5-денний інтенсив з базою B у Києві.',
+                    'en' => '5-day intensive with Category B base in London.',
+                    'ru' => '5-дневный интенсив с базой B в Москве.',
                 ],
                 'price' => '320',
                 'badge' => null,
             ],
             [
                 'icon' => 'fa-book-open',
-                'name' => ['lt' => 'Teorijos kursas', 'uk' => 'Курс теорії', 'en' => 'Theory course'],
+                'name' => [
+                    'no' => 'Teorikurs', 'sv' => 'Teorikurs', 'pl' => 'Kurs teorii',
+                    'lt' => 'Teorijos kursas', 'uk' => 'Курс теорії', 'en' => 'Theory course', 'ru' => 'Курс теории',
+                ],
                 'desc' => [
+                    'no' => 'Online + klasserom. Øvelsesprøver for Statens vegvesen.',
+                    'sv' => 'Online + klassrum. Övningsprov för Transportstyrelsen.',
+                    'pl' => 'Online + sala. Testy próbne WORD.',
                     'lt' => 'Online + auditorija. Regitra testų simuliatorius.',
-                    'uk' => 'Онлайн + аудиторія. Симулятор тестів Regitra.',
-                    'en' => 'Online + classroom. Regitra test simulator.',
+                    'uk' => 'Онлайн + аудиторія. Симулятор тестів МВС.',
+                    'en' => 'Online + classroom. DVSA practice tests.',
+                    'ru' => 'Онлайн + аудитория. Тренировочные тесты ГИБДД.',
                 ],
                 'price' => '180',
                 'badge' => null,
             ],
             [
                 'icon' => 'fa-bolt',
-                'name' => ['lt' => 'Intensyvus B (2 sav.)', 'uk' => 'Інтенсив B (2 тиж.)', 'en' => 'Intensive B (2 wks)'],
+                'name' => [
+                    'no' => 'Intensiv B (2 uker)', 'sv' => 'Intensiv B (2 veckor)', 'pl' => 'Intensywny B (2 tyg.)',
+                    'lt' => 'Intensyvus B (2 sav.)', 'uk' => 'Інтенсив B (2 тиж.)', 'en' => 'Intensive B (2 wks)', 'ru' => 'Интенсив B (2 нед.)',
+                ],
                 'desc' => [
-                    'lt' => 'Kasdienė praktika. Idealu studentams ir expat.',
-                    'uk' => 'Щоденна практика. Ідеально для студентів та expat.',
-                    'en' => 'Daily practice. Ideal for students and expats.',
+                    'no' => 'Daglig praksis i Oslo. Ideelt for studenter og nyankomne.',
+                    'sv' => 'Daglig övning i Stockholm. Perfekt för studenter.',
+                    'pl' => 'Codzienna jazda w Warszawie. Idealny dla studentów.',
+                    'lt' => 'Kasdienė praktika Vilniuje. Idealu studentams.',
+                    'uk' => 'Щоденна практика в Києві. Ідеально для студентів.',
+                    'en' => 'Daily practice in London. Ideal for students and expats.',
+                    'ru' => 'Ежедневная практика в Москве. Идеально для студентов.',
                 ],
                 'price' => '1 050',
-                'badge' => ['lt' => 'Greitas startas', 'uk' => 'Швидкий старт', 'en' => 'Fast track'],
+                'badge' => [
+                    'no' => 'Rask start', 'sv' => 'Snabb start', 'pl' => 'Szybki start',
+                    'lt' => 'Greitas startas', 'uk' => 'Швидкий старт', 'en' => 'Fast track', 'ru' => 'Быстрый старт',
+                ],
             ],
         ],
         'team' => [
@@ -297,52 +339,49 @@ function ld_default_settings(): array
         ],
         'faq' => [
             [
-                'q' => ['lt' => 'Kiek trunka B kategorijos kursas?', 'uk' => 'Скільки триває курс категорії B?', 'en' => 'How long is the Category B course?'],
-                'a' => ['lt' => 'Standartinis kursas — 6–8 savaitės. Intensyvus — 2 savaitės.', 'uk' => 'Стандарт — 6–8 тижнів. Інтенсив — 2 тижні.', 'en' => 'Standard — 6–8 weeks. Intensive — 2 weeks.'],
+                'q' => [
+                    'no' => 'Hvor lang tid tar klasse B-kurset?', 'sv' => 'Hur lång tid tar B-kursen?', 'pl' => 'Ile trwa kurs kat. B?',
+                    'lt' => 'Kiek trunka B kategorijos kursas?', 'uk' => 'Скільки триває курс категорії B?', 'en' => 'How long is the Category B course?', 'ru' => 'Сколько длится курс категории B?',
+                ],
+                'a' => [
+                    'no' => 'Standard — 6–8 uker. Intensiv — 2 uker i Oslo.', 'sv' => 'Standard — 6–8 veckor. Intensiv — 2 veckor i Stockholm.', 'pl' => 'Standard — 6–8 tygodni. Intensywny — 2 tygodnie w Warszawie.',
+                    'lt' => 'Standartinis — 6–8 savaitės. Intensyvus — 2 savaitės Vilniuje.', 'uk' => 'Стандарт — 6–8 тижнів. Інтенсив — 2 тижні в Києві.', 'en' => 'Standard — 6–8 weeks. Intensive — 2 weeks in London.', 'ru' => 'Стандарт — 6–8 недель. Интенсив — 2 недели в Москве.',
+                ],
             ],
             [
-                'q' => ['lt' => 'Ar galima mokytis anglų ar ukrainiečių kalba?', 'uk' => 'Чи можна навчатися англійською чи українською?', 'en' => 'Can I learn in English or Ukrainian?'],
-                'a' => ['lt' => 'Taip — turime specialistus, kalbančius LT, UA ir EN.', 'uk' => 'Так — є спеціалісти LT, UA та EN.', 'en' => 'Yes — we have team members speaking LT, UA and EN.'],
+                'q' => [
+                    'no' => 'Hvilke språk tilbyr dere?', 'sv' => 'Vilka språk erbjuder ni?', 'pl' => 'W jakich językach prowadzicie kursy?',
+                    'lt' => 'Kokiomis kalbomis mokote?', 'uk' => 'Якими мовами ведете навчання?', 'en' => 'Which languages do you offer?', 'ru' => 'На каких языках ведётся обучение?',
+                ],
+                'a' => [
+                    'no' => 'Norsk, engelsk og flere språk — instruktører i Oslo.', 'sv' => 'Svenska, engelska och fler — instruktörer i Stockholm.', 'pl' => 'Polski, angielski i więcej — instruktorzy w Warszawie.',
+                    'lt' => 'Lietuvių, ukrainiečių ir anglų — specialistai Vilniuje.', 'uk' => 'Українська, англійська та інші — інструктори в Києві.', 'en' => 'English and multilingual support in London.', 'ru' => 'Русский, английский и другие — инструкторы в Москве.',
+                ],
             ],
             [
-                'q' => ['lt' => 'Kur vyksta praktika Vilniuje?', 'uk' => 'Де проходить практика у Вільнюсі?', 'en' => 'Where is practice held in Vilnius?'],
-                'a' => ['lt' => 'Pradžia Konstitucijos pr. — tada miesto ir Regitra maršrutai.', 'uk' => 'Старт пр. Конституції — далі місто та маршрути Regitra.', 'en' => 'Start at Konstitucijos av. — then city and Regitra routes.'],
+                'q' => [
+                    'no' => 'Hvor foregår praksisen i Oslo?', 'sv' => 'Var sker övningskörningen i Stockholm?', 'pl' => 'Gdzie odbywają się jazdy w Warszawie?',
+                    'lt' => 'Kur vyksta praktika Vilniuje?', 'uk' => 'Де проходить практика в Києві?', 'en' => 'Where is practice held in London?', 'ru' => 'Где проходит практика в Москве?',
+                ],
+                'a' => [
+                    'no' => 'Start Karl Johans gate — deretter by og Statens vegvesen-ruter.', 'sv' => 'Start Drottninggatan — sedan stad och Transportstyrelsen-rutter.', 'pl' => 'Start Marszałkowska — potem miasto i trasy WORD.',
+                    'lt' => 'Start Konstitucijos pr. — miesto ir Regitra maršrutai.', 'uk' => 'Старт Хрещатик — міські маршрути та іспит МВС.', 'en' => 'Start Baker Street — city and DVSA test routes.', 'ru' => 'Старт Тверская — городские маршруты и экзамен ГИБДД.',
+                ],
             ],
             [
-                'q' => ['lt' => 'Ar reikia savo automobilio?', 'uk' => 'Чи потрібен свій автомобіль?', 'en' => 'Do I need my own car?'],
-                'a' => ['lt' => 'Ne — naudojame mokymo automobilius su dvigubomis pedalėmis.', 'uk' => 'Ні — навчальні авто з подвійним керуванням.', 'en' => 'No — we use dual-control training cars.'],
+                'q' => [
+                    'no' => 'Trenger jeg egen bil?', 'sv' => 'Behöver jag egen bil?', 'pl' => 'Czy potrzebuję własnego auta?',
+                    'lt' => 'Ar reikia savo automobilio?', 'uk' => 'Чи потрібен свій автомобіль?', 'en' => 'Do I need my own car?', 'ru' => 'Нужен ли свой автомобиль?',
+                ],
+                'a' => [
+                    'no' => 'Nei — vi bruker opplæringsbiler med dobbelt kontroll.', 'sv' => 'Nej — vi använder övningsbilar med dubbel pedaler.', 'pl' => 'Nie — używamy samochodów szkoleniowych z podwójnymi pedałami.',
+                    'lt' => 'Ne — mokymo automobiliai su dvigubomis pedalėmis.', 'uk' => 'Ні — навчальні авто з подвійним керуванням.', 'en' => 'No — we use dual-control training cars.', 'ru' => 'Нет — учебные авто с двойным управлением.',
+                ],
             ],
         ],
-        'seo' => [
-            'title' => [
-                'no' => 'Oslo Trafikkskole — klasse B | Forberedelse til Statens vegvesen',
-                'sv' => 'Oslo Trafikkskola — klass B | Förberedelse till Statens vegvesen',
-                'pl' => 'Szkoła Jazdy Oslo — kat. B | Przygotowanie do Statens vegvesen',
-                'lt' => 'Oslos vairavimo mokykla — B kategorija | Statens vegvesen pasiruošimas',
-                'uk' => 'Автошкола Осло — категорія B | Підготовка до Statens vegvesen',
-                'ru' => 'Автошкола Осло — категория B | Подготовка к Statens vegvesen',
-                'en' => 'Oslo Driving School — Category B | Statens vegvesen exam prep',
-            ],
-            'description' => [
-                'no' => 'Profesjonell trafikkskole i Oslo: klasse B, teori, intensivkurs. Vi ringer tilbake innen 15 min. NO / SV / PL / EN / LT / UA / RU.',
-                'sv' => 'Professionell trafikkskola i Oslo: klass B, teori, intensivkurs. Vi ringer tillbaka inom 15 min. NO / SV / PL / EN / LT / UA / RU.',
-                'pl' => 'Profesjonalna szkoła jazdy w Oslo: kat. B, teoria, kurs intensywny. Oddzwonimy w 15 min. NO / SV / PL / EN / LT / UA / RU.',
-                'lt' => 'Profesionali vairavimo mokykla Oslė: B, teorija, intensyvūs kursai. Perskambinsime per 15 min. NO / SV / PL / EN / LT / UA / RU.',
-                'uk' => 'Автошкола в Осло: B, теорія, інтенсив. Передзвонимо за 15 хв. NO / SV / PL / EN / LT / UA / RU.',
-                'ru' => 'Автошкола в Осло: B, теория, интенсив. Перезвоним за 15 мин. NO / SV / PL / EN / LT / UA / RU.',
-                'en' => 'Professional driving school in Oslo: Category B, theory, intensive courses. We call you back in 15 min. NO / SV / PL / EN / LT / UA / RU.',
-            ],
-            'keywords' => [
-                'no' => 'trafikkskole Oslo, klasse B, førerkort, Statens vegvesen, kjøretimer',
-                'sv' => 'trafikkskola Oslo, klass B, körkort, Statens vegvesen, körlektioner',
-                'pl' => 'szkoła jazdy Oslo, kat. B, prawo jazdy, Statens vegvesen, lekcje jazdy',
-                'lt' => 'vairavimo mokykla Oslo, B kategorija, Statens vegvesen, vairavimo kursai',
-                'uk' => 'автошкола Осло, категорія B, Statens vegvesen, курси водіння',
-                'ru' => 'автошкола Осло, категория B, Statens vegvesen, курсы вождения',
-                'en' => 'driving school Oslo, category B, Statens vegvesen, driving lessons Norway',
-            ],
+        'seo' => array_merge(ld_driving_seo_defaults(), [
             'og_image' => 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1200&h=630&fit=crop&q=85',
-        ],
+        ]),
         'blocks' => [
             'hero_image' => 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=900&h=600&fit=crop',
             'gallery' => [
@@ -356,7 +395,13 @@ function ld_default_settings(): array
                 ['icon' => 'fa-calendar-check', 'title' => ['lt' => 'Lankstus grafikas', 'uk' => 'Гнучкий графік', 'ru' => 'Гибкий график', 'en' => 'Flexible schedule'], 'desc' => ['lt' => 'Vakarai, savaitgaliai ir intensyvūs kursai.', 'uk' => 'Вечори, вихідні та інтенсиви.', 'ru' => 'Вечера, выходные и интенсивы.', 'en' => 'Evenings, weekends and intensive groups.']],
                 ['icon' => 'fa-car-side', 'title' => ['lt' => 'Šiuolaikiški auto', 'uk' => 'Сучасні авто', 'ru' => 'Современные авто', 'en' => 'Modern training cars'], 'desc' => ['lt' => 'Dvigubos pedalės, kondicionierius, saugumas.', 'uk' => 'Подвійне керування, кондиціонер.', 'ru' => 'Двойное управление, кондиционер.', 'en' => 'Dual controls, A/C, safety first.']],
                 ['icon' => 'fa-phone-volume', 'title' => ['lt' => 'Perskambiname', 'uk' => 'Передзвонюємо', 'ru' => 'Перезвоним', 'en' => 'We call you back'], 'desc' => ['lt' => 'Užpildykite formą — skambiname per 15 min.', 'uk' => 'Залиште номер — передзвонимо за 15 хв.', 'ru' => 'Оставьте номер — перезвоним за 15 мин.', 'en' => 'Submit the form — callback within 15 min.']],
-                ['icon' => 'fa-map-location-dot', 'title' => ['lt' => 'Vilniaus centras', 'uk' => 'Центр Вільнюса', 'ru' => 'Центр Вильнюса', 'en' => 'Central Vilnius'], 'desc' => ['lt' => 'Konstitucijos pr. — patogu iš visų rajonų.', 'uk' => 'пр. Конституції — зручно з усіх районів.', 'ru' => 'пр. Конституции — удобно из всех районов.', 'en' => 'Konstitucijos av. — easy access city-wide.']],
+                ['icon' => 'fa-map-location-dot', 'title' => [
+                    'no' => 'Oslo sentrum', 'sv' => 'Stockholm centrum', 'pl' => 'Centrum Warszawy',
+                    'lt' => 'Vilniaus centras', 'uk' => 'Центр Києва', 'en' => 'Central London', 'ru' => 'Центр Москвы',
+                ], 'desc' => [
+                    'no' => 'Karl Johans gate — lett tilgjengelig fra hele byen.', 'sv' => 'Drottninggatan — lätt att nå från hela staden.', 'pl' => 'Marszałkowska — dogodny dojazd z całego miasta.',
+                    'lt' => 'Konstitucijos pr. — patogu iš visų rajonų.', 'uk' => 'Хрещатик — зручно з усіх районів.', 'en' => 'Baker Street — easy access city-wide.', 'ru' => 'Тверская — удобно из всех районов.',
+                ]],
             ],
             'process' => [
                 'enabled' => true,
@@ -370,13 +415,16 @@ function ld_default_settings(): array
             'links' => [
                 ['icon' => 'fab fa-facebook', 'url' => 'https://facebook.com/', 'label' => ['lt' => 'Facebook', 'uk' => 'Facebook', 'en' => 'Facebook']],
                 ['icon' => 'fab fa-instagram', 'url' => 'https://instagram.com/', 'label' => ['lt' => 'Instagram', 'uk' => 'Instagram', 'en' => 'Instagram']],
-                ['icon' => 'fab fa-google', 'url' => 'https://www.google.com/maps/search/?api=1&query=Konstitucijos+pr.+12+Vilnius', 'label' => ['lt' => 'Google Maps', 'uk' => 'Google Maps', 'en' => 'Google Maps']],
+                ['icon' => 'fab fa-google', 'url' => 'https://www.google.com/maps/search/?api=1&query=Karl+Johans+gate+15+Oslo', 'label' => [
+                    'no' => 'Google Maps', 'sv' => 'Google Maps', 'pl' => 'Google Maps',
+                    'lt' => 'Google Maps', 'uk' => 'Google Maps', 'en' => 'Google Maps', 'ru' => 'Google Maps',
+                ]],
             ],
             'cta' => [
                 'enabled' => true,
                 'title' => ['lt' => 'Norite, kad perskambintume?', 'uk' => 'Хочете, щоб ми передзвонили?', 'ru' => 'Хотите, чтобы мы перезвонили?', 'en' => 'Want us to call you back?'],
                 'lead' => ['lt' => 'Palikite telefoną — paskambinsime per 15 minučių. Konsultacija nemokama.', 'uk' => 'Залиште номер — передзвонимо за 15 хвилин. Консультація безкоштовна.', 'ru' => 'Оставьте номер — перезвоним за 15 минут. Консультация бесплатна.', 'en' => 'Leave your number — we call within 15 minutes. Free consultation.'],
-                'phone' => '+37061234567',
+                'phone' => '+47 22 12 34 56',
             ],
             'video' => [
                 'enabled' => true,
@@ -384,7 +432,7 @@ function ld_default_settings(): array
                 'title' => ['lt' => 'Kaip atrodo mokymas', 'uk' => 'Як виглядає навчання', 'ru' => 'Как проходит обучение', 'en' => 'See how we train'],
             ],
             'partners' => [
-                ['name' => 'Regitra', 'logo' => ''],
+                ['name' => 'Statens vegvesen', 'logo' => ''],
                 ['name' => 'Google', 'logo' => 'https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png'],
             ],
             'promo' => [
@@ -451,7 +499,7 @@ function ld_default_settings(): array
         'integrations' => [
             'faktura' => [
                 'enabled' => true,
-                'country_id' => 'lt',
+                'country_id' => 'no',
                 'auto_invoice' => false,
                 'print_design' => 'classic-blue',
                 'print_format' => 'a4',
@@ -570,7 +618,7 @@ function ld_migrate_driving_premium(): void
         return;
     }
     $version = (int) ($saved['meta']['driving_premium_v'] ?? 0);
-    if ($version >= 3) {
+    if ($version >= 4) {
         return;
     }
     $defaults = ld_default_settings();
@@ -581,7 +629,7 @@ function ld_migrate_driving_premium(): void
         }
     }
     $merged['active_template'] = (int) ($defaults['active_template'] ?? 8);
-    $merged['meta']['driving_premium_v'] = 3;
+    $merged['meta']['driving_premium_v'] = 4;
     ld_save_json($file, $merged);
 }
 

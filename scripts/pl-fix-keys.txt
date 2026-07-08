@@ -1,0 +1,234 @@
+﻿Total: 233
+admin.active_template	Active template (live)
+admin.address	Address
+admin.ai	AI agent
+admin.ai_active_models	Active models
+admin.ai_admin_model	Admin fill model
+admin.ai_api_base_label	API endpoint URL
+admin.ai_chat_label	landing chat
+admin.ai_chat_model	Landing chat model
+admin.ai_custom_model	custom model
+admin.ai_fill_generating	AI generating…
+admin.ai_fill_model	Auto-fill model
+admin.ai_fill_saved	AI fill saved successfully.
+admin.ai_fill_title	AI agent — auto fill
+admin.ai_key_missing	Demo mode
+admin.ai_key_set	API connected
+admin.ai_provider	API provider
+admin.ai_settings_link	AI settings
+admin.ai_system_prompt	System prompt (chat)
+admin.ai_welcome_label	Welcome
+admin.api_guide_recaptcha_intro	Protect the contact form from bots.
+admin.api_guide_recaptcha_step2	Copy Site key → public field, Secret key → private field.
+admin.api_guide_title	API setup guide
+admin.block_cta_phone	Phone override
+admin.block_features	Features
+admin.block_gallery	Gallery
+admin.block_hero_hint	Split templates — photo beside headline
+admin.block_hero_pick	Main hero image
+admin.block_image	image
+admin.block_partners	Partners
+admin.block_promo	Promo banner
+admin.block_social	Social
+admin.block_video_hint	YouTube URL → embedded player
+admin.block_video_url	YouTube / embed URL
+admin.changelog_latest	Latest
+admin.chart_aria_revenue	Invoice revenue
+admin.chart_eur	EUR
+admin.chart_revenue_monthly	Invoice revenue (monthly)
+admin.checklist_done_summary	Completed ({n})
+admin.checklist_item_faq	FAQ (3+ questions)
+admin.checklist_item_phone	Phone number
+admin.checklist_missing_hero	Hero primary button (CTA) empty for: {langs}
+admin.checklist_title	Launch checklist
+admin.city	City
+admin.constructor_tip	Tip
+admin.contact	Contact
+admin.currency	Currency
+admin.design_accent	Accent color
+admin.design_btn_pill	Pill
+admin.design_btn_rounded	Rounded
+admin.design_btn_square	Square
+admin.design_buttons	Buttons
+admin.design_demos	Demo designs
+admin.design_font_scale	Font scale
+admin.design_help	Landing constructor: demo styles, templates, colors, sections.
+admin.design_hero	Hero style
+admin.design_hero_default	Default
+admin.design_hero_full	Full width
+admin.design_options	Style options
+admin.design_preset_applied	Demo design applied
+admin.design_sections	Page sections
+admin.email	Email
+admin.faktura_all	All in Faktura
+admin.faktura_auto	Auto-invoice after lead
+admin.faktura_country_id_label	Country code
+admin.faktura_print_design	Print design
+admin.faktura_support_link	Faktura support
+admin.google_maps_embed	Maps embed URL
+admin.google_maps_link	Maps link
+admin.google_rating	Google rating
+admin.google_reviews	Review cards
+admin.hero_cta	Primary button
+admin.hero_cta2	Secondary button
+admin.hero_icon	Hero icon (fa-*)
+admin.hero_settings	Hero block
+admin.hero_visual_label	Hero label
+admin.hero_visual_sub	Hero subtitle
+admin.hours	Opening hours
+admin.image_picker_label	Image
+admin.image_picker_upload_error	Upload failed.
+admin.image_picker_upload_ok	Image set.
+admin.invoice	Invoice
+admin.invoice_amount	Amount
+admin.invoice_buyer	Buyer
+admin.invoice_from_lead	From lead (optional)
+admin.invoice_manual	Manual entry
+admin.invoice_no	Number
+admin.invoice_price	Price
+admin.invoice_qty	Qty
+admin.invoice_seller	Seller
+admin.invoice_service_custom	Or type a custom service
+admin.invoice_source	Source
+admin.invoice_source_student	Student
+admin.invoice_total	Total
+admin.js_brief_required	Enter a short description
+admin.js_error	Error
+admin.label_answer	Answer
+admin.label_author	Author
+admin.label_badge	Badge
+admin.label_caption	Caption
+admin.label_date	Date
+admin.label_desc	Description
+admin.label_icon	Icon
+admin.label_icon_fa	Icon (Font Awesome)
+admin.label_initials	Initials
+admin.label_label	Label
+admin.label_lead	Lead
+admin.label_logo_url	Logo URL
+admin.label_price	Price
+admin.label_rating	Rating (1–5)
+admin.label_review	Review
+admin.label_role	Role
+admin.label_stat_label	Label
+admin.label_text	Text
+admin.label_title	Title
+admin.label_url_new	URL (new)
+admin.label_value	Value
+admin.label_years	Years of experience
+admin.lead_date	Date
+admin.lead_email	Email
+admin.lead_phone	Phone
+admin.lead_status_invoiced	Invoiced
+admin.lead_status_new	New
+admin.lead_status_other	Other
+admin.leads_email_label	Notification email
+admin.leads_notify_enable	Send email when a new training / service request arrives
+admin.map_title	Map title
+admin.menu_btn	Menu
+admin.news_ai_brief	Brief
+admin.news_ai_placeholder	E.g. New intensive B course starts July 1, limited seats…
+admin.news_ai_title	AI writing assistant
+admin.news_body	Body
+admin.news_draft	Draft
+admin.news_excerpt	Excerpt
+admin.news_image	Image URL
+admin.news_images_label	Images (cover + gallery)
+admin.news_images_upload_error	Upload failed.
+admin.news_images_upload_ok	Images added.
+admin.news_list	School news
+admin.news_published	Published
+admin.news_published_at	Publish date
+admin.news_seo_score	SEO score
+admin.news_slug	URL slug
+admin.news_title	Title
+admin.notify_agent_analyzing	AI is analyzing SEO…
+admin.notify_agent_thinking	AI agent is thinking…
+admin.notify_agent_writing	AI is writing…
+admin.notify_design_applied	Design style applied.
+admin.notify_error	Something went wrong.
+admin.notify_invoice_ok	Invoice created.
+admin.phone	Phone
+admin.placeholder_why_choose	Why choose us
+admin.preset_active	Active
+admin.preset_applied	Preset applied
+admin.recaptcha_help	Google reCAPTCHA v2 keys.
+admin.recaptcha_secret_key_label	Secret key (private)
+admin.recaptcha_site_key_label	Site key (public)
+admin.section_titles	Section titles
+admin.seo	SEO / Marketing
+admin.seo_check_item_email	Email address (Schema + trust)
+admin.seo_check_item_faq	FAQ block — 3+ questions (FAQPage schema)
+admin.seo_check_item_maps_link	Google Maps profile link (sameAs)
+admin.seo_check_item_phone	Phone number (Schema LocalBusiness)
+admin.seo_check_item_testimonials	At least one Google review / testimonial
+admin.seo_check_missing_desc_langs	Description empty for: {langs}
+admin.seo_check_missing_hero_cta	Hero CTA empty for: {langs}
+admin.seo_check_missing_hero_image	Or upload hero image in Blocks
+admin.seo_check_missing_hreflang	Incomplete meta (title/desc/keywords) for: {langs}
+admin.seo_check_missing_keywords_langs	Keywords empty for: {langs}
+admin.seo_check_missing_tagline_langs	Tagline empty for: {langs}
+admin.seo_check_missing_title_langs	Title empty for: {langs}
+admin.seo_checklist_go_blocks	Hero image
+admin.seo_checklist_title	Google SEO checklist (100%)
+admin.seo_health_analyze	AI analysis
+admin.seo_health_avg	Average score
+admin.seo_health_fix	Improve SEO
+admin.seo_health_tips_title	What to improve
+admin.seo_health_title	SEO health
+admin.seo_og_image_pick	Share image (OG)
+admin.seo_suggestions	AI suggestions
+admin.seo_tip_title_len	Title: 50–60 characters, include city + main service.
+admin.seo_tips_intro	Practical rules — check before publishing.
+admin.set_active	Set active
+admin.stats	Statistics
+admin.stats_active	Active template
+admin.stats_news	Published news
+admin.stats_revenue	Revenue (EUR)
+admin.stats_seo_avg	Avg SEO score
+admin.student_course	Course
+admin.student_last_invoice	Last invoice
+admin.student_monthly_price	Price per month
+admin.student_phone	Phone
+admin.student_started	Start date
+admin.student_status_active	Active
+admin.student_status_completed	Completed
+admin.student_status_paused	Paused
+admin.students_deleted	Student removed.
+admin.students_invoice_btn	Invoice
+admin.students_invoice_ok	Invoice created.
+admin.students_print_invoice	Print invoice
+admin.students_saved	Student saved.
+admin.support_page.ai_error	AI compose failed.
+admin.support_page.cat_billing	Billing / license
+admin.support_page.cat_bug	Bug report
+admin.support_page.cat_feature	Feature request
+admin.support_page.cat_other	Other
+admin.support_page.category	Category
+admin.support_page.client_name	Customer name
+admin.support_page.client_topic	Topic (booking, price, question…)
+admin.support_page.copy_draft	Copy text
+admin.support_page.draft_notes	What do you want to say?
+admin.support_page.inbox_attach	Screenshots
+admin.support_page.inbox_author_owner	BILOHASH support
+admin.support_page.inbox_author_you	You
+admin.support_page.inbox_reply	Your reply
+admin.support_page.inbox_send	Send reply
+admin.support_page.inbox_sent_ok	Reply sent.
+admin.support_page.inbox_unread	New reply
+admin.support_page.message	Message
+admin.support_page.send_owner	Send message
+admin.support_page.sent_ok	Message sent! We will get back to you soon.
+admin.support_page.subject	Subject
+admin.support_page.tab_inbox	Conversations
+admin.support_page.your_email_hint	Optional — so we can reply to you directly.
+admin.tagline	Tagline
+admin.tasks_done_summary	Completed tasks ({n})
+admin.tasks_go_blocks	Hero image
+admin.tasks_title	Launch task checklist
+admin.template_active	Active
+admin.template_recommended	Recommended
+admin.view_site	View site
+landing.eur	€
+landing.form_phone	Phone
+nav.contact	Contact

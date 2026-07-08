@@ -177,9 +177,20 @@ function ld_preset_dentist(): array
             ],
             'google' => ['maps_embed' => '', 'maps_link' => '', 'reviews_url' => 'https://www.google.com/maps/search/?api=1&query=Gedimino+pr.+28+Vilnius', 'rating' => '4.9', 'review_count' => '214'],
             'seo' => [
-                'title' => ld_pi('SmileLine stomatologija Vilniuje — implantai, užrašymas', 'SmileLine стоматологія Вільнюс — імпланти, запис', 'SmileLine dentistry Vilnius — implants, booking'),
-                'description' => ld_pi('Stomatologijos klinika Vilniuje: implantai, balinimas, vaikų gydymas. Užsiregistruokite online.', 'Стоматологія у Вільнюсі: імпланти, відбілювання, дитяче лікування. Запис онлайн.', 'Dental clinic in Vilnius: implants, whitening, kids care. Book online.'),
-                'keywords' => ld_pi('stomatologija, implantai, dantų gydytojas, Vilnius, užrašymas', 'стоматологія, імпланти, стоматолог, Вільнюс, запис', 'dentist, implants, dental clinic, Vilnius, booking'),
+                'title' => ld_preset_country_seo_titles(ld_pi('SmileLine Stomatologija', 'SmileLine Стоматологія', 'SmileLine Dentistry')),
+                'description' => ld_preset_country_seo_descriptions(
+                    ld_pi('SmileLine Stomatologija', 'SmileLine Стоматологія', 'SmileLine Dentistry'),
+                    ld_pi(
+                        'Implantai, balinimas, vaikų stomatologija Vilniuje.',
+                        'Імплантація, відбілювання, дитяча стоматологія у Києві.',
+                        'Implants, whitening, kids dentistry in London.',
+                        'Имплантация, отбеливание, детская стоматология в Москве.',
+                        'Implantater, bleking, barne-tannlege i Oslo.',
+                        'Implantat, blekning, barntandvård i Stockholm.',
+                        'Implanty, wybielanie, stomatologia dziecięca w Warszawie.'
+                    )
+                ),
+                'keywords' => ld_preset_country_seo_keywords(ld_pi('SmileLine Stomatologija', 'SmileLine Стоматологія', 'SmileLine Dentistry')),
                 'og_image' => 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&h=630&fit=crop',
             ],
             'blocks' => [
