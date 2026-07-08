@@ -1,0 +1,126 @@
+/* Lending CMS — 10 driving school themes (Vilnius demo) */
+
+.ld-theme-01 {
+    --ld-primary: #1d4ed8;
+    --ld-primary-hover: #1e3a8a;
+    --ld-accent: #3b82f6;
+    --ld-primary-light: #dbeafe;
+    --ld-hero-bg: linear-gradient(165deg, #dbeafe 0%, #f8fafc 55%);
+    --ld-section-alt: #fff;
+    --ld-contact-bg: #eff6ff;
+}
+
+.ld-theme-02 {
+    --ld-primary: #ea580c;
+    --ld-primary-hover: #c2410c;
+    --ld-accent: #fb923c;
+    --ld-primary-light: #ffedd5;
+    --ld-hero-bg: linear-gradient(165deg, #ffedd5 0%, #fff7ed 50%, #f8fafc 100%);
+    --ld-text: #431407;
+    --ld-muted: #9a3412;
+    --ld-section-alt: #fff7ed;
+    --ld-contact-bg: #ffedd5;
+}
+
+.ld-theme-03 {
+    --ld-primary: #15803d;
+    --ld-primary-hover: #166534;
+    --ld-accent: #22c55e;
+    --ld-primary-light: #dcfce7;
+    --ld-hero-bg: linear-gradient(165deg, #dcfce7, #f0fdf4 50%, #f8fafc);
+    --ld-section-alt: #f0fdf4;
+    --ld-contact-bg: #dcfce7;
+}
+
+.ld-theme-04 {
+    --ld-primary: #38bdf8;
+    --ld-primary-hover: #0ea5e9;
+    --ld-accent: #7dd3fc;
+    --ld-primary-light: #0f172a;
+    --ld-text: #e2e8f0;
+    --ld-muted: #94a3b8;
+    --ld-bg: #0f172a;
+    --ld-card: #1e293b;
+    --ld-border: #334155;
+    --ld-header-bg: rgba(15, 23, 42, .95);
+    --ld-hero-bg: linear-gradient(180deg, #1e293b, #0f172a);
+    --ld-hero-text: #f8fafc;
+    --ld-hero-muted: #94a3b8;
+    --ld-section-alt: #1e293b;
+    --ld-contact-bg: #1e293b;
+}
+.ld-theme-04 .ld-btn-ghost { color: #e2e8f0; border-color: #475569; }
+.ld-theme-04 .ld-landing-footer { background: #0f172a; color: #94a3b8; }
+
+.ld-theme-05 {
+    --ld-primary: #0f172a;
+    --ld-primary-hover: #334155;
+    --ld-accent: #64748b;
+    --ld-primary-light: #f1f5f9;
+    --ld-bg: #fff;
+    --ld-hero-bg: #fff;
+    --ld-section-alt: #fafafa;
+    --ld-contact-bg: #f8fafc;
+}
+.ld-theme-05 .ld-hero h1 { font-weight: 300; letter-spacing: -.02em; }
+
+.ld-theme-06 {
+    --ld-primary: #dc2626;
+    --ld-primary-hover: #b91c1c;
+    --ld-accent: #f87171;
+    --ld-primary-light: #fee2e2;
+    --ld-hero-bg: linear-gradient(135deg, #450a0a 0%, #991b1b 40%, #fee2e2 100%);
+    --ld-hero-text: #fff;
+    --ld-hero-muted: #fecaca;
+    --ld-section-alt: #fef2f2;
+    --ld-contact-bg: #fee2e2;
+}
+.ld-theme-06 .ld-hero-badge { color: #fecaca; }
+.ld-theme-06 .ld-btn-ghost { color: #fff; border-color: rgba(255,255,255,.4); }
+
+.ld-theme-07 {
+    --ld-primary: #7c3aed;
+    --ld-primary-hover: #6d28d9;
+    --ld-accent: #a78bfa;
+    --ld-primary-light: #ede9fe;
+    --ld-hero-bg: linear-gradient(160deg, #ede9fe, #faf5ff 45%, #f8fafc);
+    --ld-section-alt: #faf5ff;
+    --ld-contact-bg: #ede9fe;
+}
+.ld-theme-07 .ld-course-card, .ld-theme-07 .ld-instructor-card { border-radius: 16px; }
+
+.ld-theme-08 {
+    --ld-primary: #0d9488;
+    --ld-primary-hover: #0f766e;
+    --ld-accent: #2dd4bf;
+    --ld-primary-light: #ccfbf1;
+    --ld-hero-bg: linear-gradient(120deg, #ccfbf1, #ecfeff 50%, #f0fdfa);
+    --ld-section-alt: #f0fdfa;
+    --ld-contact-bg: #ccfbf1;
+}
+.ld-theme-08 .ld-hero-card { border-radius: 4px; }
+
+.ld-theme-09 {
+    --ld-primary: #ca8a04;
+    --ld-primary-hover: #a16207;
+    --ld-accent: #eab308;
+    --ld-primary-light: #fef9c3;
+    --ld-text: #422006;
+    --ld-muted: #854d0e;
+    --ld-hero-bg: linear-gradient(180deg, #fef08a, #fefce8);
+    --ld-section-alt: #fefce8;
+    --ld-contact-bg: #fef9c3;
+}
+.ld-theme-09 .ld-btn-primary { color: #422006; }
+
+.ld-theme-10 {
+    --ld-primary: #475569;
+    --ld-primary-hover: #334155;
+    --ld-accent: #64748b;
+    --ld-primary-light: #f1f5f9;
+    --ld-hero-bg: linear-gradient(180deg, #f8fafc, #e2e8f0);
+    --ld-section-alt: #fff;
+    --ld-contact-bg: #f1f5f9;
+}
+.ld-theme-10 .ld-hero h1 { text-transform: uppercase; letter-spacing: .04em; font-size: clamp(1.5rem, 4vw, 2.2rem); }
+.ld-theme-10 .ld-course-card { border-left: 4px solid var(--ld-primary); }

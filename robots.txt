@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /lending/
+Disallow: /lending/admin/
+Disallow: /lending/data/
+Disallow: /lending/api/
+
+Sitemap: https://bilohash.com/lending/sitemap.xml

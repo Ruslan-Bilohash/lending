@@ -1,0 +1,19 @@
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# Deploy artifacts
+_deploy-lending.zip
+*.zip
+
+# Local secrets
+.env
+.env.*
+**/deploy.config.local.ps1
+
+# Optional runtime (uncomment to ignore live data)
+# data/settings.json
+# data/leads.json
