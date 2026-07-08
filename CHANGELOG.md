@@ -1,5 +1,13 @@
 # Business Landing CMS — Changelog
 
+## 1.6.2 — 2026-07-08
+
+**Deploy:** Hostinger → https://bilohash.com/lending/
+
+- **i18n fix:** Swedish (`sv`) and Polish (`pl`) — removed 327+233 Norwegian copy-paste strings; real SV/PL translations
+- **i18n audit:** quality check added (detects NO-copies, not just missing keys)
+- **Ecosystem:** PL/SV footer labels in shared `ecosystem-i18n.php`
+
 ## 1.6.1 — 2026-07-08
 
 **Deploy:** Hostinger → https://bilohash.com/lending/

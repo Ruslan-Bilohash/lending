@@ -50,4 +50,11 @@ foreach ($lang in $langs) {
     }
 }
 if ($hasFail) { exit 1 }
+
+$qualityScript = Join-Path $PSScriptRoot 'i18n-quality-audit.ps1'
+if (Test-Path $qualityScript) {
+    Write-Host ''
+    & $qualityScript
+    if ($LASTEXITCODE -ne 0) { exit 1 }
+}
 exit 0
