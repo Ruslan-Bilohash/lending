@@ -46,11 +46,8 @@ function ld_lang_url(string $code): string
     $parts = parse_url($uri);
     parse_str($parts['query'] ?? '', $q);
     $code = ld_normalize_lang($code);
-    if ($code === 'no') {
-        unset($q['lang']);
-    } else {
-        $q['lang'] = ld_lang_public_code($code);
-    }
+    // Always set lang in switcher links (incl. NO) so ld_detect_lang() updates the cookie.
+    $q['lang'] = ld_lang_public_code($code);
     $path = $parts['path'] ?? '/lending/';
     return $path . ($q ? '?' . http_build_query($q) : '');
 }

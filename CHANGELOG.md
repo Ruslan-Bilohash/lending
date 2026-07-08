@@ -1,5 +1,11 @@
 # Business Landing CMS — Changelog
 
+## 1.6.8 — 2026-07-08
+
+**Deploy:** Hostinger → https://bilohash.com/lending/
+
+- **Hotfix i18n:** Norwegian (NO) language switcher now uses `?lang=no` — fixes cookie not resetting when switching from RU/SV/EN/etc. back to default locale
+
 ## 1.6.7 — 2026-07-08
 
 **Deploy:** Hostinger → https://bilohash.com/lending/
